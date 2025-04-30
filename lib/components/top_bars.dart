@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart' as material;
 import '../constants/colors.dart';
 
-enum TopBarVariant { defaultTopBar, iconBack, fullNavbar, homePageNavBar }
+enum TopBarVariant {
+  defaultTopBar,
+  iconBack,
+  fullNavbar,
+  homePageNavBar,
+  titleIcon,
+  titleIconDark,
+}
 
 class AppTopBar extends material.StatelessWidget {
   final TopBarVariant variant;
@@ -42,6 +49,7 @@ class AppTopBar extends material.StatelessWidget {
           onBackPressed: onBackPressed,
           actions: actions,
           actionVisibilities: actionVisibilities,
+          themeMode: themeMode,
         );
       case TopBarVariant.fullNavbar:
         return FullNavbarTopBar(
@@ -58,6 +66,22 @@ class AppTopBar extends material.StatelessWidget {
           themeMode: themeMode,
           onModeToggle: onModeToggle,
           title: title ?? 'Jobee',
+        );
+      case TopBarVariant.titleIcon:
+        return TitleIconTopBar(
+          onBackPressed: onBackPressed,
+          actions: actions,
+          actionVisibilities: actionVisibilities,
+          themeMode: themeMode,
+          title: title,
+        );
+      case TopBarVariant.titleIconDark:
+        return TitleIconDarkTopBar(
+          onBackPressed: onBackPressed,
+          actions: actions,
+          actionVisibilities: actionVisibilities,
+          themeMode: themeMode,
+          title: title,
         );
     }
   }
@@ -133,54 +157,35 @@ class DefaultTopBar extends material.StatelessWidget {
   }
 }
 
-// Icon Back TopBar (Navigation Bar-style with Back Icon, Empty Expanded Space, Actions)
+// Icon Back TopBar (Navigation Bar-style with Back Icon, Actions)
 class IconBackTopBar extends material.StatelessWidget {
   final material.VoidCallback? onBackPressed;
   final List<material.Widget>? actions;
   final List<bool>? actionVisibilities;
+  final material.ThemeMode themeMode;
 
   const IconBackTopBar({
     super.key,
     this.onBackPressed,
     this.actions,
     this.actionVisibilities,
+    required this.themeMode,
   });
 
   @override
   material.Widget build(material.BuildContext context) {
-    // Default actions if none provided
+    final isDarkMode = themeMode == material.ThemeMode.dark;
+    final backgroundColor = isDarkMode ? AppColors.dark2 : AppColors.primary;
+    final iconColor = isDarkMode ? AppColors.grey200 : AppColors.white;
+
+    // Default actions: single search icon
     final defaultActions = [
       material.IconButton(
-        icon: const material.Icon(
-          material.Icons.settings,
-          color: AppColors.primary,
-          size: 28,
-        ),
-        onPressed: () {},
-      ),
-      material.IconButton(
-        icon: const material.Icon(
-          material.Icons.notifications,
-          color: AppColors.primary,
-          size: 28,
-        ),
-        onPressed: () {},
-      ),
-      material.IconButton(
-        icon: const material.Icon(
-          material.Icons.favorite,
-          color: AppColors.primary,
-          size: 28,
-        ),
-        onPressed: () {},
-      ),
-      material.IconButton(
-        icon: const material.Icon(
-          material.Icons.add,
-          color: AppColors.primary,
-          size: 28,
-        ),
-        onPressed: () {},
+        icon: material.Icon(material.Icons.search, color: iconColor, size: 28),
+        onPressed: () {
+          // TODO: Implement search action
+        },
+        tooltip: 'Search',
       ),
     ];
 
@@ -198,15 +203,15 @@ class IconBackTopBar extends material.StatelessWidget {
         // Second Row: Icon Back TopBar (Auto Layout, 48px height)
         material.Container(
           height: 48,
-          color: AppColors.primary,
+          color: backgroundColor,
           padding: const material.EdgeInsets.symmetric(horizontal: 16),
           child: material.Row(
             children: [
               // Left: Back Icon (28x28)
               material.IconButton(
-                icon: const material.Icon(
+                icon: material.Icon(
                   material.Icons.arrow_back,
-                  color: AppColors.white,
+                  color: iconColor,
                   size: 28,
                 ),
                 onPressed:
@@ -221,8 +226,6 @@ class IconBackTopBar extends material.StatelessWidget {
               const material.SizedBox(width: 16),
               // Middle: Expanded Empty Space
               const material.Expanded(child: material.SizedBox()),
-              // Spacing: 16px
-              const material.SizedBox(width: 16),
               // Right: Actions (Icons, 28x28, 20px gap)
               material.Row(
                 mainAxisSize: material.MainAxisSize.min,
@@ -246,6 +249,316 @@ class IconBackTopBar extends material.StatelessWidget {
                     }).toList(),
               ),
             ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+// Title Icon TopBar (Light Mode: Arrow Back, Title in Greyscale 900)
+class TitleIconTopBar extends material.StatelessWidget {
+  final material.VoidCallback? onBackPressed;
+  final List<material.Widget>? actions;
+  final List<bool>? actionVisibilities;
+  final material.ThemeMode themeMode;
+  final String? title;
+
+  const TitleIconTopBar({
+    super.key,
+    this.onBackPressed,
+    this.actions,
+    this.actionVisibilities,
+    required this.themeMode,
+    this.title,
+  });
+
+  @override
+  material.Widget build(material.BuildContext context) {
+    final isDarkMode = themeMode == material.ThemeMode.dark;
+    final iconColor = isDarkMode ? AppColors.grey200 : AppColors.white;
+
+    // Default actions: single search icon
+    final defaultActions = [
+      material.IconButton(
+        icon: material.Icon(material.Icons.search, color: iconColor, size: 28),
+        onPressed: () {
+          // TODO: Implement search action
+        },
+        tooltip: 'Search',
+      ),
+    ];
+
+    final effectiveActions = actions ?? defaultActions;
+    final effectiveVisibilities =
+        actionVisibilities ??
+        List.generate(effectiveActions.length, (index) => true);
+
+    return material.Column(
+      children: [
+        // First Row: Default TopBar (Status Bar)
+        const DefaultTopBar(),
+        // Second Row: Layout (no padding or gaps)
+        material.Padding(
+          padding: const material.EdgeInsets.symmetric(horizontal: 20),
+          child: material.Container(
+            child: material.Row(
+              mainAxisAlignment: material.MainAxisAlignment.spaceBetween,
+              children: [
+                // First Child: Container with 2 Grandchildren
+                material.Expanded(
+                  child: material.Container(
+                    child: material.Row(
+                      children: [
+                        // 1st Grandchild: Arrow Back Icon
+                        material.IconButton(
+                          icon: material.Icon(
+                            material.Icons.arrow_back,
+                            size: 28,
+                            color: AppColors.grey900, // Greyscale 900
+                          ),
+                          onPressed:
+                              onBackPressed ??
+                              () => material.Navigator.pop(context),
+                        ),
+                        const material.SizedBox(width: 16),
+                        // 2nd Grandchild: Title Section
+                        material.Expanded(
+                          child: material.Text(
+                            title ?? 'Find Jobs', // Configurable title
+                            style: material.Theme.of(
+                              context,
+                            ).textTheme.titleLarge!.copyWith(
+                              color: AppColors.grey900, // Greyscale 900
+                              fontWeight: material.FontWeight.w700,
+                            ),
+                            textAlign: material.TextAlign.left,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const material.SizedBox(width: 12),
+                // Second Child: Container with 3 Grandchildren + Actions (Right-Oriented)
+                material.Container(
+                  child: material.Row(
+                    mainAxisAlignment: material.MainAxisAlignment.end,
+                    children: [
+                      // Grandchild 1: Favorite Icon
+                      material.Container(
+                        width: 28,
+                        height: 28,
+                        child: material.Center(
+                          child: material.Icon(
+                            material.Icons.favorite,
+                            size: 24,
+                            color: AppColors.primary, // Primary blue
+                          ),
+                        ),
+                      ),
+                      const material.SizedBox(width: 20),
+                      // Grandchild 2: Notification Icon
+                      material.Container(
+                        width: 28,
+                        height: 28,
+                        child: material.Center(
+                          child: material.Icon(
+                            material.Icons.notifications,
+                            size: 24,
+                            color: AppColors.primary, // Primary blue
+                          ),
+                        ),
+                      ),
+                      const material.SizedBox(width: 20),
+                      // Grandchild 3: Map Icon
+                      material.Container(
+                        width: 28,
+                        height: 28,
+                        child: material.Center(
+                          child: material.Icon(
+                            material.Icons.map,
+                            size: 24,
+                            color: AppColors.primary, // Primary blue
+                          ),
+                        ),
+                      ),
+                      // Actions (e.g., Search Icon)
+                      ...effectiveActions.asMap().entries.map((entry) {
+                        final index = entry.key;
+                        final action = entry.value;
+                        final isVisible = effectiveVisibilities[index];
+                        return isVisible
+                            ? material.Padding(
+                              padding: material.EdgeInsets.only(left: 20),
+                              child: material.SizedBox(
+                                width: 28,
+                                height: 28,
+                                child: action,
+                              ),
+                            )
+                            : const material.SizedBox.shrink();
+                      }),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+// Title Icon Dark TopBar (Dark Mode: Arrow Back, Title in White)
+class TitleIconDarkTopBar extends material.StatelessWidget {
+  final material.VoidCallback? onBackPressed;
+  final List<material.Widget>? actions;
+  final List<bool>? actionVisibilities;
+  final material.ThemeMode themeMode;
+  final String? title;
+
+  const TitleIconDarkTopBar({
+    super.key,
+    this.onBackPressed,
+    this.actions,
+    this.actionVisibilities,
+    required this.themeMode,
+    this.title,
+  });
+
+  @override
+  material.Widget build(material.BuildContext context) {
+    final isDarkMode = themeMode == material.ThemeMode.dark;
+    final iconColor = isDarkMode ? AppColors.grey200 : AppColors.white;
+
+    // Default actions: single search icon
+    final defaultActions = [
+      material.IconButton(
+        icon: material.Icon(material.Icons.search, color: iconColor, size: 28),
+        onPressed: () {
+          // TODO: Implement search action
+        },
+        tooltip: 'Search',
+      ),
+    ];
+
+    final effectiveActions = actions ?? defaultActions;
+    final effectiveVisibilities =
+        actionVisibilities ??
+        List.generate(effectiveActions.length, (index) => true);
+
+    return material.Column(
+      children: [
+        // First Row: Default TopBar (Status Bar)
+        const DefaultTopBar(),
+        // Second Row: Layout (no padding or gaps)
+        material.Padding(
+          padding: const material.EdgeInsets.symmetric(horizontal: 20),
+          child: material.Container(
+            child: material.Row(
+              mainAxisAlignment: material.MainAxisAlignment.spaceBetween,
+              children: [
+                // First Child: Container with 2 Grandchildren
+                material.Expanded(
+                  child: material.Container(
+                    child: material.Row(
+                      children: [
+                        // 1st Grandchild: Arrow Back Icon
+                        material.IconButton(
+                          icon: material.Icon(
+                            material.Icons.arrow_back,
+                            size: 28,
+                            color: AppColors.white, // White for dark mode
+                          ),
+                          onPressed:
+                              onBackPressed ??
+                              () => material.Navigator.pop(context),
+                        ),
+                        const material.SizedBox(width: 16),
+                        // 2nd Grandchild: Title Section
+                        material.Expanded(
+                          child: material.Text(
+                            title ?? 'Find Jobs', // Configurable title
+                            style: material.Theme.of(
+                              context,
+                            ).textTheme.titleLarge!.copyWith(
+                              color: AppColors.white, // White for dark mode
+                              fontWeight: material.FontWeight.w700,
+                            ),
+                            textAlign: material.TextAlign.left,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const material.SizedBox(width: 12),
+                // Second Child: Container with 3 Grandchildren + Actions (Right-Oriented)
+                material.Container(
+                  child: material.Row(
+                    mainAxisAlignment: material.MainAxisAlignment.end,
+                    children: [
+                      // Grandchild 1: Favorite Icon
+                      material.Container(
+                        width: 28,
+                        height: 28,
+                        child: material.Center(
+                          child: material.Icon(
+                            material.Icons.favorite,
+                            size: 24,
+                            color: AppColors.primary, // Primary blue
+                          ),
+                        ),
+                      ),
+                      const material.SizedBox(width: 20),
+                      // Grandchild 2: Notification Icon
+                      material.Container(
+                        width: 28,
+                        height: 28,
+                        child: material.Center(
+                          child: material.Icon(
+                            material.Icons.notifications,
+                            size: 24,
+                            color: AppColors.primary, // Primary blue
+                          ),
+                        ),
+                      ),
+                      const material.SizedBox(width: 20),
+                      // Grandchild 3: Map Icon
+                      material.Container(
+                        width: 28,
+                        height: 28,
+                        child: material.Center(
+                          child: material.Icon(
+                            material.Icons.map,
+                            size: 24,
+                            color: AppColors.primary, // Primary blue
+                          ),
+                        ),
+                      ),
+                      // Actions (e.g., Search Icon)
+                      ...effectiveActions.asMap().entries.map((entry) {
+                        final index = entry.key;
+                        final action = entry.value;
+                        final isVisible = effectiveVisibilities[index];
+                        return isVisible
+                            ? material.Padding(
+                              padding: material.EdgeInsets.only(left: 20),
+                              child: material.SizedBox(
+                                width: 28,
+                                height: 28,
+                                child: action,
+                              ),
+                            )
+                            : const material.SizedBox.shrink();
+                      }),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ],

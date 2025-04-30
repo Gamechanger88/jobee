@@ -2,10 +2,10 @@ import 'package:flutter/material.dart' as material;
 import '../constants/colors.dart';
 import '../components/index.dart';
 
-class FindTab extends material.StatelessWidget {
+class SuppliesTab extends material.StatelessWidget {
   final material.ThemeMode themeMode;
 
-  const FindTab({super.key, this.themeMode = material.ThemeMode.light});
+  const SuppliesTab({super.key, this.themeMode = material.ThemeMode.light});
 
   @override
   material.Widget build(material.BuildContext context) {
@@ -15,15 +15,12 @@ class FindTab extends material.StatelessWidget {
         children: [
           AppTopBar(
             variant:
-                themeMode == material.ThemeMode.dark
-                    ? TopBarVariant
-                        .titleIconDark // Dark mode
-                    : TopBarVariant.titleIcon, // Light mode
-            themeMode: themeMode,
+                TopBarVariant.iconBack, // Assumed to use iconBack, light mode
+            themeMode:
+                material.ThemeMode.light, // Force light mode for consistency
             onBackPressed: () {
               material.Navigator.pop(context);
             },
-            title: 'Find Jobs', // Configurable title
             actions: [
               material.IconButton(
                 icon: const material.Icon(
@@ -39,11 +36,11 @@ class FindTab extends material.StatelessWidget {
             ],
             actionVisibilities: [true],
           ),
-          // Placeholder content; replace with actual Find tab content
+          // Placeholder content; replace with actual Supplies tab content
           material.Expanded(
             child: material.Center(
               child: material.Text(
-                'Find Tab Content',
+                'Supplies Tab Content',
                 style: material.TextStyle(
                   color:
                       themeMode == material.ThemeMode.dark

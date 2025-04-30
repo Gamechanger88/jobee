@@ -98,41 +98,61 @@ class Tag extends material.StatelessWidget {
         return (
           AppColors.grey500.withOpacity(0.08),
           AppColors.grey500,
-          material.Border.all(color: AppColors.grey500, width: 1),
+          null, // No border
         );
       case TagVariant.invertedInfoLight:
         return (
           AppColors.primary.withOpacity(0.08),
           AppColors.primary,
-          material.Border.all(color: AppColors.primary, width: 1),
+          null, // No border
         );
       case TagVariant.invertedSuccessLight:
         return (
           AppColors.green.withOpacity(0.08),
           AppColors.green,
-          material.Border.all(color: AppColors.green, width: 1),
+          null, // No border
         );
       case TagVariant.invertedWarningLight:
         return (
           AppColors.yellow.withOpacity(0.08),
           AppColors.yellow,
-          material.Border.all(color: AppColors.yellow, width: 1),
+          null, // No border
         );
       case TagVariant.invertedErrorLight:
         return (
           AppColors.red.withOpacity(0.08),
           AppColors.red,
-          material.Border.all(color: AppColors.red, width: 1),
+          null, // No border
         );
       // Inverted Dark Style
       case TagVariant.invertedDefaultDark:
+        return (
+          AppColors.dark3, // 12% transparent dark3
+          AppColors.grey500,
+          null,
+        );
       case TagVariant.invertedInfoDark:
+        return (
+          AppColors.dark3, // 12% transparent dark3
+          AppColors.primary,
+          null,
+        );
       case TagVariant.invertedSuccessDark:
+        return (
+          AppColors.dark3, // 12% transparent dark3
+          AppColors.green,
+          null,
+        );
       case TagVariant.invertedWarningDark:
+        return (
+          AppColors.dark3, // 12% transparent dark3
+          AppColors.yellow,
+          null,
+        );
       case TagVariant.invertedErrorDark:
         return (
-          const material.Color(0x3D2A2B39), // 24% transparent 2a2b39
-          _getTextColorForDark(variant),
+          AppColors.dark3, // 12% transparent dark3
+          AppColors.red,
           null,
         );
       // Borderless Style
@@ -146,24 +166,6 @@ class Tag extends material.StatelessWidget {
         return (AppColors.white, AppColors.yellow, null);
       case TagVariant.borderlessError:
         return (AppColors.white, AppColors.red, null);
-    }
-  }
-
-  // Helper to get text color for inverted dark variants
-  material.Color _getTextColorForDark(TagVariant variant) {
-    switch (variant) {
-      case TagVariant.invertedDefaultDark:
-        return AppColors.grey500;
-      case TagVariant.invertedInfoDark:
-        return AppColors.primary;
-      case TagVariant.invertedSuccessDark:
-        return AppColors.green;
-      case TagVariant.invertedWarningDark:
-        return AppColors.yellow;
-      case TagVariant.invertedErrorDark:
-        return AppColors.red;
-      default:
-        return AppColors.primary; // Fallback
     }
   }
 

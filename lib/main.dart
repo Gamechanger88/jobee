@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart' as material;
+import 'package:flutter/animation.dart'; // Direct import for Tween, Curves, CurvedAnimation
 import 'package:google_fonts/google_fonts.dart';
 
 // Import tab pages from screens directory
 import 'screens/home_tab.dart';
 import 'screens/find_tab.dart';
 import 'screens/jobs_tab.dart';
-import 'screens/contacts_tab.dart';
-import 'screens/profile_tab.dart';
+import 'screens/contacts_tab.dart'; // Used for Network tab
+import 'screens/supplies_tab.dart'; // New Supplies tab
 
 // Import colors from constants directory
 import 'constants/colors.dart';
@@ -112,6 +113,7 @@ class JobeeHomePage extends material.StatefulWidget {
 
 class _JobeeHomePageState extends material.State<JobeeHomePage> {
   int _selectedIndex = 0; // For BottomNavigationBar
+  int _previousIndex = 0; // Track previous index for animation direction
   final material.GlobalKey<material.NavigatorState> _navigatorKey =
       material.GlobalKey<material.NavigatorState>();
   material.ThemeMode _themeMode =
@@ -122,12 +124,13 @@ class _JobeeHomePageState extends material.State<JobeeHomePage> {
     'Home',
     'Find',
     'Jobs',
-    'Contacts',
-    'Profile',
+    'Network',
+    'Supplies',
   ];
 
   void _onItemTapped(int index) {
     setState(() {
+      _previousIndex = _selectedIndex; // Store current index before changing
       _selectedIndex = index;
       _navigatorKey.currentState?.pushReplacementNamed(_tabTitles[index]);
     });
@@ -165,15 +168,17 @@ class _JobeeHomePageState extends material.State<JobeeHomePage> {
         backgroundColor:
             _themeMode == material.ThemeMode.light
                 ? AppColors.white
-                : AppColors.grey900, // App-wide background
+                : AppColors.dark3, // App-wide background
         body: material.Column(
           children: [
-            AppTopBar(
-              variant: TopBarVariant.homePageNavBar,
-              themeMode: _themeMode,
-              onModeToggle: _toggleThemeMode,
-              title: 'Jobee',
-            ),
+            // AppTopBar only for Home tab
+            if (_selectedIndex == 0)
+              AppTopBar(
+                variant: TopBarVariant.homePageNavBar,
+                themeMode: _themeMode, // Dark mode support for Home tab
+                onModeToggle: _toggleThemeMode,
+                title: 'Jobee',
+              ),
             material.Expanded(
               child: material.Navigator(
                 key: _navigatorKey,
@@ -190,18 +195,44 @@ class _JobeeHomePageState extends material.State<JobeeHomePage> {
                     case 'Jobs':
                       page = JobsTab(themeMode: _themeMode);
                       break;
-                    case 'Contacts':
+                    case 'Network':
                       page = ContactsTab(themeMode: _themeMode);
                       break;
-                    case 'Profile':
-                      page = ProfileTab(themeMode: _themeMode);
+                    case 'Supplies':
+                      page = SuppliesTab(themeMode: _themeMode);
                       break;
                     default:
                       page = HomeTab(themeMode: _themeMode);
                   }
-                  return material.MaterialPageRoute(
-                    builder: (_) => page,
+                  // Determine slide direction based on tab indices
+                  final currentIndex = _tabTitles.indexOf(settings.name!);
+                  final slideFromRight = currentIndex > _previousIndex;
+                  return material.PageRouteBuilder(
                     settings: settings,
+                    pageBuilder:
+                        (context, animation, secondaryAnimation) => page,
+                    transitionsBuilder: (
+                      context,
+                      animation,
+                      secondaryAnimation,
+                      child,
+                    ) {
+                      final begin =
+                          slideFromRight
+                              ? const Offset(1.0, 0.0) // Right-to-left
+                              : const Offset(-1.0, 0.0); // Left-to-right
+                      const end = Offset.zero;
+                      final tween = Tween(begin: begin, end: end);
+                      final curvedAnimation = CurvedAnimation(
+                        parent: animation,
+                        curve: Curves.easeInOut,
+                      );
+                      return material.SlideTransition(
+                        position: tween.animate(curvedAnimation),
+                        child: child,
+                      );
+                    },
+                    transitionDuration: const Duration(milliseconds: 300),
                   );
                 },
               ),
@@ -215,7 +246,7 @@ class _JobeeHomePageState extends material.State<JobeeHomePage> {
           backgroundColor:
               _themeMode == material.ThemeMode.light
                   ? AppColors.white
-                  : AppColors.grey900,
+                  : AppColors.dark3, // Match app-wide background
           items: const [
             material.BottomNavigationBarItem(
               icon: material.Icon(material.Icons.home),
@@ -230,12 +261,12 @@ class _JobeeHomePageState extends material.State<JobeeHomePage> {
               label: 'Jobs',
             ),
             material.BottomNavigationBarItem(
-              icon: material.Icon(material.Icons.contacts),
-              label: 'Contacts',
+              icon: material.Icon(material.Icons.group),
+              label: 'Network',
             ),
             material.BottomNavigationBarItem(
-              icon: material.Icon(material.Icons.person),
-              label: 'Profile',
+              icon: material.Icon(material.Icons.medical_services),
+              label: 'Supplies',
             ),
           ],
         ),
