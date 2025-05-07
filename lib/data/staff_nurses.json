@@ -1,0 +1,1002 @@
+[
+    {
+      "id": 1,
+      "name": "Anil Thomas",
+      "gender": "Male",
+      "location": "Delhi",
+      "images": [
+        "assets/images/male_indian.png",
+        "assets/images/male_india1.png",
+        "assets/images/male_white.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 5,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1600,
+        "night_shift": 1650,
+        "24_hour_shift": 2500
+      },
+      "clients": 4
+    },
+    {
+      "id": 2,
+      "name": "Priya Nair",
+      "gender": "Female",
+      "location": "Gurgaon",
+      "images": [
+        "assets/images/female_asian_car.png",
+        "assets/images/female_white.png",
+        "assets/images/female_asian_office.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 3,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1200,
+        "night_shift": 1250,
+        "24_hour_shift": 2000
+      },
+      "clients": 2
+    },
+    {
+      "id": 3,
+      "name": "Rohan Sharma",
+      "gender": "Male",
+      "location": "Noida",
+      "images": [
+        "assets/images/male_indian2.png",
+        "assets/images/male_white_blazer.png",
+        "assets/images/male_white_mall.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 7,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 2000,
+        "night_shift": 1950,
+        "24_hour_shift": 3000
+      },
+      "clients": 6
+    },
+    {
+      "id": 4,
+      "name": "Neha Gupta",
+      "gender": "Female",
+      "location": "Faridabad",
+      "images": [
+        "assets/images/female_white2.png",
+        "assets/images/female_asian_traveller.png",
+        "assets/images/female_white3.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 4,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1400,
+        "night_shift": 1450,
+        "24_hour_shift": 2300
+      },
+      "clients": 3
+    },
+    {
+      "id": 5,
+      "name": "Suresh Menon",
+      "gender": "Male",
+      "location": "Greater Noida",
+      "images": [
+        "assets/images/male_white2.png",
+        "assets/images/male_white_student.png",
+        "assets/images/male_indian.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 6,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1800,
+        "night_shift": 1750,
+        "24_hour_shift": 2700
+      },
+      "clients": 5
+    },
+    {
+      "id": 6,
+      "name": "Jincy Varghese",
+      "gender": "Female",
+      "location": "Ghaziabad",
+      "images": [
+        "assets/images/female_asian_office.png",
+        "assets/images/female_white.png",
+        "assets/images/female_asian_car.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 2,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1300,
+        "night_shift": 1300,
+        "24_hour_shift": 2100
+      },
+      "clients": 1
+    },
+    {
+      "id": 7,
+      "name": "Vikram Singh",
+      "gender": "Male",
+      "location": "Delhi",
+      "images": [
+        "assets/images/male_white.png",
+        "assets/images/male_india1.png",
+        "assets/images/male_white_mall.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 8,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1900,
+        "night_shift": 1850,
+        "24_hour_shift": 2900
+      },
+      "clients": 7
+    },
+    {
+      "id": 8,
+      "name": "Anjali Yadav",
+      "gender": "Female",
+      "location": "Gurgaon",
+      "images": [
+        "assets/images/female_asian_traveller.png",
+        "assets/images/female_white2.png",
+        "assets/images/female_white3.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 5,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1500,
+        "night_shift": 1550,
+        "24_hour_shift": 2400
+      },
+      "clients": 4
+    },
+    {
+      "id": 9,
+      "name": "Mathew Joseph",
+      "gender": "Male",
+      "location": "Noida",
+      "images": [
+        "assets/images/male_white2.png",
+        "assets/images/male_indian2.png",
+        "assets/images/male_white_blazer.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 3,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1250,
+        "night_shift": 1200,
+        "24_hour_shift": 2050
+      },
+      "clients": 2
+    },
+    {
+      "id": 10,
+      "name": "Sneha Patel",
+      "gender": "Female",
+      "location": "Faridabad",
+      "images": [
+        "assets/images/female_white.png",
+        "assets/images/female_asian_car.png",
+        "assets/images/female_white2.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 6,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1700,
+        "night_shift": 1650,
+        "24_hour_shift": 2600
+      },
+      "clients": 5
+    },
+    {
+      "id": 11,
+      "name": "Binu George",
+      "gender": "Male",
+      "location": "Greater Noida",
+      "images": [
+        "assets/images/male_white_blazer.png",
+        "assets/images/male_white_student.png",
+        "assets/images/male_indian.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 4,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1450,
+        "night_shift": 1400,
+        "24_hour_shift": 2350
+      },
+      "clients": 3
+    },
+    {
+      "id": 12,
+      "name": "Latha Suresh",
+      "gender": "Female",
+      "location": "Ghaziabad",
+      "images": [
+        "assets/images/female_asian_office.png",
+        "assets/images/female_white3.png",
+        "assets/images/female_asian_traveller.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 7,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1950,
+        "night_shift": 1900,
+        "24_hour_shift": 2950
+      },
+      "clients": 6
+    },
+    {
+      "id": 13,
+      "name": "Amit Kumar",
+      "gender": "Male",
+      "location": "Delhi",
+      "images": [
+        "assets/images/male_india1.png",
+        "assets/images/male_white_mall.png",
+        "assets/images/male_white2.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 2,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1200,
+        "night_shift": 1250,
+        "24_hour_shift": 2000
+      },
+      "clients": 1
+    },
+    {
+      "id": 14,
+      "name": "Pooja Verma",
+      "gender": "Female",
+      "location": "Gurgaon",
+      "images": [
+        "assets/images/female_white.png",
+        "assets/images/female_asian_car.png",
+        "assets/images/female_white2.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 8,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 2000,
+        "night_shift": 1950,
+        "24_hour_shift": 3000
+      },
+      "clients": 8
+    },
+    {
+      "id": 15,
+      "name": "Vinod Pillai",
+      "gender": "Male",
+      "location": "Noida",
+      "images": [
+        "assets/images/male_indian2.png",
+        "assets/images/male_white.png",
+        "assets/images/male_white_student.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 5,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1550,
+        "night_shift": 1500,
+        "24_hour_shift": 2450
+      },
+      "clients": 4
+    },
+    {
+      "id": 16,
+      "name": "Riya Singh",
+      "gender": "Female",
+      "location": "Faridabad",
+      "images": [
+        "assets/images/female_asian_traveller.png",
+        "assets/images/female_white3.png",
+        "assets/images/female_asian_office.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 3,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1300,
+        "night_shift": 1350,
+        "24_hour_shift": 2100
+      },
+      "clients": 2
+    },
+    {
+      "id": 17,
+      "name": "Shiju Mathew",
+      "gender": "Male",
+      "location": "Greater Noida",
+      "images": [
+        "assets/images/male_white_blazer.png",
+        "assets/images/male_indian.png",
+        "assets/images/male_white_mall.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 9,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 2000,
+        "night_shift": 1900,
+        "24_hour_shift": 3000
+      },
+      "clients": 9
+    },
+    {
+      "id": 18,
+      "name": "Kavita Sharma",
+      "gender": "Female",
+      "location": "Ghaziabad",
+      "images": [
+        "assets/images/female_white2.png",
+        "assets/images/female_asian_car.png",
+        "assets/images/female_white.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 4,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1400,
+        "night_shift": 1450,
+        "24_hour_shift": 2300
+      },
+      "clients": 3
+    },
+    {
+      "id": 19,
+      "name": "Reji Thomas",
+      "gender": "Male",
+      "location": "Delhi",
+      "images": [
+        "assets/images/male_india1.png",
+        "assets/images/male_white2.png",
+        "assets/images/male_indian2.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 6,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1700,
+        "night_shift": 1650,
+        "24_hour_shift": 2600
+      },
+      "clients": 5
+    },
+    {
+      "id": 20,
+      "name": "Meera Nair",
+      "gender": "Female",
+      "location": "Gurgaon",
+      "images": [
+        "assets/images/female_asian_office.png",
+        "assets/images/female_white3.png",
+        "assets/images/female_asian_traveller.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 2,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1200,
+        "night_shift": 1200,
+        "24_hour_shift": 2000
+      },
+      "clients": 1
+    },
+    {
+      "id": 21,
+      "name": "Rahul Yadav",
+      "gender": "Male",
+      "location": "Noida",
+      "images": [
+        "assets/images/male_white.png",
+        "assets/images/male_white_student.png",
+        "assets/images/male_indian.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 7,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1950,
+        "night_shift": 1900,
+        "24_hour_shift": 2950
+      },
+      "clients": 6
+    },
+    {
+      "id": 22,
+      "name": "Shalini Mishra",
+      "gender": "Female",
+      "location": "Faridabad",
+      "images": [
+        "assets/images/female_white.png",
+        "assets/images/female_asian_car.png",
+        "assets/images/female_white2.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 5,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1500,
+        "night_shift": 1550,
+        "24_hour_shift": 2400
+      },
+      "clients": 4
+    },
+    {
+      "id": 23,
+      "name": "Tomy Varghese",
+      "gender": "Male",
+      "location": "Greater Noida",
+      "images": [
+        "assets/images/male_indian2.png",
+        "assets/images/male_white_blazer.png",
+        "assets/images/male_white_mall.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 3,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1250,
+        "night_shift": 1200,
+        "24_hour_shift": 2050
+      },
+      "clients": 2
+    },
+    {
+      "id": 24,
+      "name": "Divya Chopra",
+      "gender": "Female",
+      "location": "Ghaziabad",
+      "images": [
+        "assets/images/female_asian_traveller.png",
+        "assets/images/female_white3.png",
+        "assets/images/female_asian_office.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 6,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1700,
+        "night_shift": 1650,
+        "24_hour_shift": 2600
+      },
+      "clients": 5
+    },
+    {
+      "id": 25,
+      "name": "Arun Jacob",
+      "gender": "Male",
+      "location": "Delhi",
+      "images": [
+        "assets/images/male_india1.png",
+        "assets/images/male_white2.png",
+        "assets/images/male_indian.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 8,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 2000,
+        "night_shift": 1950,
+        "24_hour_shift": 3000
+      },
+      "clients": 8
+    },
+    {
+      "id": 26,
+      "name": "Simran Kaur",
+      "gender": "Female",
+      "location": "Gurgaon",
+      "images": [
+        "assets/images/female_white2.png",
+        "assets/images/female_asian_car.png",
+        "assets/images/female_white.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 4,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1400,
+        "night_shift": 1450,
+        "24_hour_shift": 2300
+      },
+      "clients": 3
+    },
+    {
+      "id": 27,
+      "name": "Eldhose Paul",
+      "gender": "Male",
+      "location": "Noida",
+      "images": [
+        "assets/images/male_white.png",
+        "assets/images/male_white_student.png",
+        "assets/images/male_indian2.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 2,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1200,
+        "night_shift": 1200,
+        "24_hour_shift": 2000
+      },
+      "clients": 1
+    },
+    {
+      "id": 28,
+      "name": "Manisha Rawat",
+      "gender": "Female",
+      "location": "Faridabad",
+      "images": [
+        "assets/images/female_asian_office.png",
+        "assets/images/female_white3.png",
+        "assets/images/female_asian_traveller.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 7,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1950,
+        "night_shift": 1900,
+        "24_hour_shift": 2950
+      },
+      "clients": 6
+    },
+    {
+      "id": 29,
+      "name": "Siju Abraham",
+      "gender": "Male",
+      "location": "Greater Noida",
+      "images": [
+        "assets/images/male_indian.png",
+        "assets/images/male_white_blazer.png",
+        "assets/images/male_white_mall.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 5,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1500,
+        "night_shift": 1550,
+        "24_hour_shift": 2400
+      },
+      "clients": 4
+    },
+    {
+      "id": 30,
+      "name": "Aarti Thakur",
+      "gender": "Female",
+      "location": "Ghaziabad",
+      "images": [
+        "assets/images/female_white.png",
+        "assets/images/female_asian_car.png",
+        "assets/images/female_white2.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 3,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1300,
+        "night_shift": 1350,
+        "24_hour_shift": 2100
+      },
+      "clients": 2
+    },
+    {
+      "id": 31,
+      "name": "Biju John",
+      "gender": "Male",
+      "location": "Delhi",
+      "images": [
+        "assets/images/male_india1.png",
+        "assets/images/male_white2.png",
+        "assets/images/male_indian2.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 6,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1700,
+        "night_shift": 1650,
+        "24_hour_shift": 2600
+      },
+      "clients": 5
+    },
+    {
+      "id": 32,
+      "name": "Nidhi Joshi",
+      "gender": "Female",
+      "location": "Gurgaon",
+      "images": [
+        "assets/images/female_asian_traveller.png",
+        "assets/images/female_white3.png",
+        "assets/images/female_asian_office.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 8,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 2000,
+        "night_shift": 1950,
+        "24_hour_shift": 3000
+      },
+      "clients": 7
+    },
+    {
+      "id": 33,
+      "name": "Shinto Thomas",
+      "gender": "Male",
+      "location": "Noida",
+      "images": [
+        "assets/images/male_white.png",
+        "assets/images/male_white_student.png",
+        "assets/images/male_indian.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 4,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1400,
+        "night_shift": 1450,
+        "24_hour_shift": 2300
+      },
+      "clients": 3
+    },
+    {
+      "id": 34,
+      "name": "Sonam Rana",
+      "gender": "Female",
+      "location": "Faridabad",
+      "images": [
+        "assets/images/female_white2.png",
+        "assets/images/female_asian_car.png",
+        "assets/images/female_white.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 2,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1200,
+        "night_shift": 1200,
+        "24_hour_shift": 2000
+      },
+      "clients": 1
+    },
+    {
+      "id": 35,
+      "name": "Jomon Joseph",
+      "gender": "Male",
+      "location": "Greater Noida",
+      "images": [
+        "assets/images/male_indian2.png",
+        "assets/images/male_white_blazer.png",
+        "assets/images/male_white_mall.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 7,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1950,
+        "night_shift": 1900,
+        "24_hour_shift": 2950
+      },
+      "clients": 6
+    },
+    {
+      "id": 36,
+      "name": "Rekha Sharma",
+      "gender": "Female",
+      "location": "Ghaziabad",
+      "images": [
+        "assets/images/female_asian_office.png",
+        "assets/images/female_white3.png",
+        "assets/images/female_asian_traveller.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 5,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1500,
+        "night_shift": 1550,
+        "24_hour_shift": 2400
+      },
+      "clients": 4
+    },
+    {
+      "id": 37,
+      "name": "Varghese Paul",
+      "gender": "Male",
+      "location": "Delhi",
+      "images": [
+        "assets/images/male_india1.png",
+        "assets/images/male_white2.png",
+        "assets/images/male_indian.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 3,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1250,
+        "night_shift": 1200,
+        "24_hour_shift": 2050
+      },
+      "clients": 2
+    },
+    {
+      "id": 38,
+      "name": "Tanya Gupta",
+      "gender": "Female",
+      "location": "Gurgaon",
+      "images": [
+        "assets/images/female_white.png",
+        "assets/images/female_asian_car.png",
+        "assets/images/female_white2.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 6,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1700,
+        "night_shift": 1650,
+        "24_hour_shift": 2600
+      },
+      "clients": 5
+    },
+    {
+      "id": 39,
+      "name": "Raju Varghese",
+      "gender": "Male",
+      "location": "Noida",
+      "images": [
+        "assets/images/male_white.png",
+        "assets/images/male_white_student.png",
+        "assets/images/male_indian2.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 8,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 2000,
+        "night_shift": 1950,
+        "24_hour_shift": 3000
+      },
+      "clients": 7
+    },
+    {
+      "id": 40,
+      "name": "Jyoti Pandey",
+      "gender": "Female",
+      "location": "Faridabad",
+      "images": [
+        "assets/images/female_asian_traveller.png",
+        "assets/images/female_white3.png",
+        "assets/images/female_asian_office.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 4,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1400,
+        "night_shift": 1450,
+        "24_hour_shift": 2300
+      },
+      "clients": 3
+    },
+    {
+      "id": 41,
+      "name": "Shibu Thomas",
+      "gender": "Male",
+      "location": "Greater Noida",
+      "images": [
+        "assets/images/male_indian.png",
+        "assets/images/male_white_blazer.png",
+        "assets/images/male_white_mall.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 2,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1200,
+        "night_shift": 1200,
+        "24_hour_shift": 2000
+      },
+      "clients": 1
+    },
+    {
+      "id": 42,
+      "name": "Preeti Singh",
+      "gender": "Female",
+      "location": "Ghaziabad",
+      "images": [
+        "assets/images/female_white2.png",
+        "assets/images/female_asian_car.png",
+        "assets/images/female_white.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 7,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1950,
+        "night_shift": 1900,
+        "24_hour_shift": 2950
+      },
+      "clients": 6
+    },
+    {
+      "id": 43,
+      "name": "Jithin Jacob",
+      "gender": "Male",
+      "location": "Delhi",
+      "images": [
+        "assets/images/male_india1.png",
+        "assets/images/male_white2.png",
+        "assets/images/male_indian2.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 5,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1500,
+        "night_shift": 1550,
+        "24_hour_shift": 2400
+      },
+      "clients": 4
+    },
+    {
+      "id": 44,
+      "name": "Ritu Sharma",
+      "gender": "Female",
+      "location": "Gurgaon",
+      "images": [
+        "assets/images/female_asian_office.png",
+        "assets/images/female_white3.png",
+        "assets/images/female_asian_traveller.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 3,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1300,
+        "night_shift": 1350,
+        "24_hour_shift": 2100
+      },
+      "clients": 2
+    },
+    {
+      "id": 45,
+      "name": "Sanjay Nair",
+      "gender": "Male",
+      "location": "Noida",
+      "images": [
+        "assets/images/male_white.png",
+        "assets/images/male_white_student.png",
+        "assets/images/male_indian.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 6,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1700,
+        "night_shift": 1650,
+        "24_hour_shift": 2600
+      },
+      "clients": 5
+    },
+    {
+      "id": 46,
+      "name": "Monika Verma",
+      "gender": "Female",
+      "location": "Faridabad",
+      "images": [
+        "assets/images/female_white2.png",
+        "assets/images/female_asian_car.png",
+        "assets/images/female_white.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 8,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 2000,
+        "night_shift": 1950,
+        "24_hour_shift": 3000
+      },
+      "clients": 7
+    },
+    {
+      "id": 47,
+      "name": "Liju Mathew",
+      "gender": "Male",
+      "location": "Greater Noida",
+      "images": [
+        "assets/images/male_indian2.png",
+        "assets/images/male_white_blazer.png",
+        "assets/images/male_white_mall.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 4,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1400,
+        "night_shift": 1450,
+        "24_hour_shift": 2300
+      },
+      "clients": 3
+    },
+    {
+      "id": 48,
+      "name": "Swati Thakur",
+      "gender": "Female",
+      "location": "Ghaziabad",
+      "images": [
+        "assets/images/female_asian_traveller.png",
+        "assets/images/female_white3.png",
+        "assets/images/female_asian_office.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 2,
+      "qualifications": "GNM",
+      "rates": {
+        "day_shift": 1200,
+        "night_shift": 1200,
+        "24_hour_shift": 2000
+      },
+      "clients": 1
+    },
+    {
+      "id": 49,
+      "name": "Nithin George",
+      "gender": "Male",
+      "location": "Delhi",
+      "images": [
+        "assets/images/male_india1.png",
+        "assets/images/male_white2.png",
+        "assets/images/male_indian.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 7,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1950,
+        "night_shift": 1900,
+        "24_hour_shift": 2950
+      },
+      "clients": 6
+    },
+    {
+      "id": 50,
+      "name": "Kirti Malhotra",
+      "gender": "Female",
+      "location": "Gurgaon",
+      "images": [
+        "assets/images/female_white.png",
+        "assets/images/female_asian_car.png",
+        "assets/images/female_white2.png"
+      ],
+      "role": "Staff Nurse",
+      "experience": 5,
+      "qualifications": "B. Sc. Nursing",
+      "rates": {
+        "day_shift": 1500,
+        "night_shift": 1550,
+        "24_hour_shift": 2400
+      },
+      "clients": 4
+    }
+  ]

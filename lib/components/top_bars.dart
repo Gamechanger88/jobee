@@ -8,22 +8,21 @@ enum TopBarVariant {
   homePageNavBar,
   titleIcon,
   titleIconDark,
+  batteryBar,
+  UserTypeAppBar,
 }
 
 class AppTopBar extends material.StatelessWidget {
   final TopBarVariant variant;
-  final material.ThemeMode themeMode; // Light or Dark mode
-  final material.VoidCallback? onModeToggle; // Callback to toggle theme mode
-  // For IconBack and FullNavbar variants
+  final material.ThemeMode themeMode;
+  final material.VoidCallback? onModeToggle;
   final material.VoidCallback? onBackPressed;
   final List<material.Widget>? actions;
   final List<bool>? actionVisibilities;
-  // For FullNavbar and HomePageNavBar variants
   final String? title;
-  final List<String>?
-  tabTitles; // Titles for the tab bar (e.g., Nurse, Attendant, Physio)
-  final material.ValueChanged<int>? onTabChanged; // Callback for tab changes
-  final int? selectedTabIndex; // Current selected tab index
+  final List<String>? tabTitles;
+  final material.ValueChanged<int>? onTabChanged;
+  final int? selectedTabIndex;
 
   const AppTopBar({
     super.key,
@@ -83,11 +82,67 @@ class AppTopBar extends material.StatelessWidget {
           themeMode: themeMode,
           title: title,
         );
+      case TopBarVariant.batteryBar:
+        return const DefaultTopBar();
+      case TopBarVariant.UserTypeAppBar:
+        return material.Container(
+          padding: const material.EdgeInsets.symmetric(vertical: 10),
+          color:
+              themeMode == material.ThemeMode.dark
+                  ? AppColors.dark3
+                  : AppColors.white,
+          child: material.Row(
+            mainAxisAlignment: material.MainAxisAlignment.spaceBetween,
+            children: [
+              material.Row(
+                children: [
+                  if (onBackPressed != null)
+                    material.IconButton(
+                      icon: material.Icon(
+                        material.Icons.arrow_back,
+                        color:
+                            themeMode == material.ThemeMode.dark
+                                ? AppColors.white
+                                : AppColors.grey600,
+                        size: 24,
+                      ),
+                      onPressed: onBackPressed,
+                    ),
+                  material.Text(
+                    title ?? 'Find Jobs',
+                    style: material.TextStyle(
+                      fontSize: 18,
+                      fontWeight: material.FontWeight.w700,
+                      color:
+                          themeMode == material.ThemeMode.dark
+                              ? AppColors.white
+                              : AppColors.black,
+                    ),
+                  ),
+                ],
+              ),
+              material.Row(
+                children: List.generate(actions?.length ?? 0, (index) {
+                  return material.Visibility(
+                    visible:
+                        actionVisibilities != null &&
+                                actionVisibilities!.length > index
+                            ? actionVisibilities![index]
+                            : true,
+                    child:
+                        actions != null
+                            ? actions![index]
+                            : const material.SizedBox.shrink(),
+                  );
+                }),
+              ),
+            ],
+          ),
+        );
     }
   }
 }
 
-// Default TopBar (Status Bar-style)
 class DefaultTopBar extends material.StatelessWidget {
   const DefaultTopBar({super.key});
 
@@ -100,7 +155,6 @@ class DefaultTopBar extends material.StatelessWidget {
       child: material.Row(
         mainAxisAlignment: material.MainAxisAlignment.spaceBetween,
         children: [
-          // Left: Network and notifications
           material.Row(
             children: [
               const material.Icon(
@@ -129,7 +183,6 @@ class DefaultTopBar extends material.StatelessWidget {
               ),
             ],
           ),
-          // Right: Battery and time
           material.Row(
             children: [
               material.Text(
@@ -157,7 +210,6 @@ class DefaultTopBar extends material.StatelessWidget {
   }
 }
 
-// Icon Back TopBar (Navigation Bar-style with Back Icon, Actions)
 class IconBackTopBar extends material.StatelessWidget {
   final material.VoidCallback? onBackPressed;
   final List<material.Widget>? actions;
@@ -178,13 +230,10 @@ class IconBackTopBar extends material.StatelessWidget {
     final backgroundColor = isDarkMode ? AppColors.dark2 : AppColors.primary;
     final iconColor = isDarkMode ? AppColors.grey200 : AppColors.white;
 
-    // Default actions: single search icon
     final defaultActions = [
       material.IconButton(
         icon: material.Icon(material.Icons.search, color: iconColor, size: 28),
-        onPressed: () {
-          // TODO: Implement search action
-        },
+        onPressed: () {},
         tooltip: 'Search',
       ),
     ];
@@ -196,18 +245,14 @@ class IconBackTopBar extends material.StatelessWidget {
 
     return material.Column(
       children: [
-        // First Row: Default TopBar (Status Bar)
         const DefaultTopBar(),
-        // Gap: 16px
         const material.SizedBox(height: 16),
-        // Second Row: Icon Back TopBar (Auto Layout, 48px height)
         material.Container(
           height: 48,
           color: backgroundColor,
           padding: const material.EdgeInsets.symmetric(horizontal: 16),
           child: material.Row(
             children: [
-              // Left: Back Icon (28x28)
               material.IconButton(
                 icon: material.Icon(
                   material.Icons.arrow_back,
@@ -222,11 +267,8 @@ class IconBackTopBar extends material.StatelessWidget {
                   minHeight: 28,
                 ),
               ),
-              // Spacing: 16px
               const material.SizedBox(width: 16),
-              // Middle: Expanded Empty Space
               const material.Expanded(child: material.SizedBox()),
-              // Right: Actions (Icons, 28x28, 20px gap)
               material.Row(
                 mainAxisSize: material.MainAxisSize.min,
                 children:
@@ -237,7 +279,7 @@ class IconBackTopBar extends material.StatelessWidget {
                       return isVisible
                           ? material.Padding(
                             padding: material.EdgeInsets.only(
-                              left: index > 0 ? 20 : 0,
+                              left: index > 0 ? 0 : 0,
                             ),
                             child: material.SizedBox(
                               width: 28,
@@ -256,7 +298,6 @@ class IconBackTopBar extends material.StatelessWidget {
   }
 }
 
-// Title Icon TopBar (Light Mode: Arrow Back, Title in Greyscale 900)
 class TitleIconTopBar extends material.StatelessWidget {
   final material.VoidCallback? onBackPressed;
   final List<material.Widget>? actions;
@@ -278,132 +319,128 @@ class TitleIconTopBar extends material.StatelessWidget {
     final isDarkMode = themeMode == material.ThemeMode.dark;
     final iconColor = isDarkMode ? AppColors.grey200 : AppColors.white;
 
-    // Default actions: single search icon
     final defaultActions = [
       material.IconButton(
         icon: material.Icon(material.Icons.search, color: iconColor, size: 28),
-        onPressed: () {
-          // TODO: Implement search action
-        },
+        onPressed: () {},
         tooltip: 'Search',
+        padding: material.EdgeInsets.zero,
+        constraints: const material.BoxConstraints(),
       ),
     ];
 
-    final effectiveActions = actions ?? defaultActions;
+    final effectiveActions =
+        actions != null && actions!.isNotEmpty ? actions! : defaultActions;
     final effectiveVisibilities =
-        actionVisibilities ??
-        List.generate(effectiveActions.length, (index) => true);
+        actionVisibilities != null &&
+                actionVisibilities!.length == effectiveActions.length
+            ? actionVisibilities!
+            : List.generate(effectiveActions.length, (index) => true);
 
     return material.Column(
       children: [
-        // First Row: Default TopBar (Status Bar)
         const DefaultTopBar(),
-        // Second Row: Layout (no padding or gaps)
         material.Padding(
-          padding: const material.EdgeInsets.symmetric(horizontal: 20),
-          child: material.Container(
-            child: material.Row(
-              mainAxisAlignment: material.MainAxisAlignment.spaceBetween,
-              children: [
-                // First Child: Container with 2 Grandchildren
-                material.Expanded(
-                  child: material.Container(
-                    child: material.Row(
-                      children: [
-                        // 1st Grandchild: Arrow Back Icon
-                        material.IconButton(
-                          icon: material.Icon(
-                            material.Icons.arrow_back,
-                            size: 28,
-                            color: AppColors.grey900, // Greyscale 900
-                          ),
-                          onPressed:
-                              onBackPressed ??
-                              () => material.Navigator.pop(context),
+          padding: const material.EdgeInsets.only(left: 20),
+          child: material.Row(
+            mainAxisAlignment: material.MainAxisAlignment.spaceBetween,
+            children: [
+              material.Expanded(
+                child: material.Row(
+                  children: [
+                    material.IconButton(
+                      icon: material.Icon(
+                        material.Icons.arrow_back,
+                        size: 28,
+                        color: AppColors.grey900,
+                      ),
+                      onPressed:
+                          onBackPressed ??
+                          () => material.Navigator.pop(context),
+                      padding: material.EdgeInsets.zero,
+                      constraints: const material.BoxConstraints(),
+                    ),
+                    const material.SizedBox(width: 16),
+                    material.Expanded(
+                      child: material.Text(
+                        title ?? 'Find Jobs',
+                        style: material.Theme.of(
+                          context,
+                        ).textTheme.titleLarge!.copyWith(
+                          color: AppColors.grey900,
+                          fontWeight: material.FontWeight.w700,
+                          fontSize: 20,
                         ),
-                        const material.SizedBox(width: 16),
-                        // 2nd Grandchild: Title Section
-                        material.Expanded(
-                          child: material.Text(
-                            title ?? 'Find Jobs', // Configurable title
-                            style: material.Theme.of(
-                              context,
-                            ).textTheme.titleLarge!.copyWith(
-                              color: AppColors.grey900, // Greyscale 900
-                              fontWeight: material.FontWeight.w700,
-                            ),
-                            textAlign: material.TextAlign.left,
-                          ),
-                        ),
-                      ],
+                        textAlign: material.TextAlign.left,
+                        overflow: material.TextOverflow.ellipsis,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const material.SizedBox(width: 12),
+              material.Row(
+                mainAxisAlignment: material.MainAxisAlignment.end,
+                children: [
+                  material.SizedBox(
+                    width: 28,
+                    height: 28,
+                    child: material.IconButton(
+                      icon: material.Icon(
+                        material.Icons.favorite,
+                        size: 24,
+                        color: AppColors.primary,
+                      ),
+                      onPressed: () {},
+                      padding: material.EdgeInsets.zero,
+                      constraints: const material.BoxConstraints(),
                     ),
                   ),
-                ),
-                const material.SizedBox(width: 12),
-                // Second Child: Container with 3 Grandchildren + Actions (Right-Oriented)
-                material.Container(
-                  child: material.Row(
-                    mainAxisAlignment: material.MainAxisAlignment.end,
-                    children: [
-                      // Grandchild 1: Favorite Icon
-                      material.Container(
-                        width: 28,
-                        height: 28,
-                        child: material.Center(
-                          child: material.Icon(
-                            material.Icons.favorite,
-                            size: 24,
-                            color: AppColors.primary, // Primary blue
-                          ),
-                        ),
+                  const material.SizedBox(width: 16),
+                  material.SizedBox(
+                    width: 28,
+                    height: 28,
+                    child: material.IconButton(
+                      icon: material.Icon(
+                        material.Icons.notifications,
+                        size: 24,
+                        color: AppColors.primary,
                       ),
-                      const material.SizedBox(width: 20),
-                      // Grandchild 2: Notification Icon
-                      material.Container(
-                        width: 28,
-                        height: 28,
-                        child: material.Center(
-                          child: material.Icon(
-                            material.Icons.notifications,
-                            size: 24,
-                            color: AppColors.primary, // Primary blue
-                          ),
-                        ),
-                      ),
-                      const material.SizedBox(width: 20),
-                      // Grandchild 3: Map Icon
-                      material.Container(
-                        width: 28,
-                        height: 28,
-                        child: material.Center(
-                          child: material.Icon(
-                            material.Icons.map,
-                            size: 24,
-                            color: AppColors.primary, // Primary blue
-                          ),
-                        ),
-                      ),
-                      // Actions (e.g., Search Icon)
-                      ...effectiveActions.asMap().entries.map((entry) {
-                        final index = entry.key;
-                        final action = entry.value;
-                        final isVisible = effectiveVisibilities[index];
-                        return isVisible
-                            ? material.Padding(
-                              padding: material.EdgeInsets.only(left: 20),
-                              child: material.SizedBox(
-                                width: 28,
-                                height: 28,
-                                child: action,
-                              ),
-                            )
-                            : const material.SizedBox.shrink();
-                      }),
-                    ],
+                      onPressed: () {},
+                      padding: material.EdgeInsets.zero,
+                      constraints: const material.BoxConstraints(),
+                    ),
                   ),
-                ),
-              ],
-            ),
+                  const material.SizedBox(width: 16),
+                  material.SizedBox(
+                    width: 28,
+                    height: 28,
+                    child: material.IconButton(
+                      icon: material.Icon(
+                        material.Icons.map,
+                        size: 24,
+                        color: AppColors.primary,
+                      ),
+                      onPressed: () {},
+                      padding: material.EdgeInsets.zero,
+                      constraints: const material.BoxConstraints(),
+                    ),
+                  ),
+                  ...effectiveActions.asMap().entries.map((entry) {
+                    final index = entry.key;
+                    final action = entry.value;
+                    final isVisible = effectiveVisibilities[index];
+                    return isVisible
+                        ? material.SizedBox(
+                          width: 28,
+                          height: 28,
+                          child: action,
+                        )
+                        : const material.SizedBox.shrink();
+                  }),
+                ],
+              ),
+            ],
           ),
         ),
       ],
@@ -411,7 +448,6 @@ class TitleIconTopBar extends material.StatelessWidget {
   }
 }
 
-// Title Icon Dark TopBar (Dark Mode: Arrow Back, Title in White)
 class TitleIconDarkTopBar extends material.StatelessWidget {
   final material.VoidCallback? onBackPressed;
   final List<material.Widget>? actions;
@@ -433,13 +469,10 @@ class TitleIconDarkTopBar extends material.StatelessWidget {
     final isDarkMode = themeMode == material.ThemeMode.dark;
     final iconColor = isDarkMode ? AppColors.grey200 : AppColors.white;
 
-    // Default actions: single search icon
     final defaultActions = [
       material.IconButton(
         icon: material.Icon(material.Icons.search, color: iconColor, size: 28),
-        onPressed: () {
-          // TODO: Implement search action
-        },
+        onPressed: () {},
         tooltip: 'Search',
       ),
     ];
@@ -451,40 +484,35 @@ class TitleIconDarkTopBar extends material.StatelessWidget {
 
     return material.Column(
       children: [
-        // First Row: Default TopBar (Status Bar)
         const DefaultTopBar(),
-        // Second Row: Layout (no padding or gaps)
         material.Padding(
           padding: const material.EdgeInsets.symmetric(horizontal: 20),
           child: material.Container(
             child: material.Row(
               mainAxisAlignment: material.MainAxisAlignment.spaceBetween,
               children: [
-                // First Child: Container with 2 Grandchildren
                 material.Expanded(
                   child: material.Container(
                     child: material.Row(
                       children: [
-                        // 1st Grandchild: Arrow Back Icon
                         material.IconButton(
                           icon: material.Icon(
                             material.Icons.arrow_back,
                             size: 28,
-                            color: AppColors.white, // White for dark mode
+                            color: AppColors.white,
                           ),
                           onPressed:
                               onBackPressed ??
                               () => material.Navigator.pop(context),
                         ),
                         const material.SizedBox(width: 16),
-                        // 2nd Grandchild: Title Section
                         material.Expanded(
                           child: material.Text(
-                            title ?? 'Find Jobs', // Configurable title
+                            title ?? 'title',
                             style: material.Theme.of(
                               context,
                             ).textTheme.titleLarge!.copyWith(
-                              color: AppColors.white, // White for dark mode
+                              color: AppColors.white,
                               fontWeight: material.FontWeight.w700,
                             ),
                             textAlign: material.TextAlign.left,
@@ -495,12 +523,22 @@ class TitleIconDarkTopBar extends material.StatelessWidget {
                   ),
                 ),
                 const material.SizedBox(width: 12),
-                // Second Child: Container with 3 Grandchildren + Actions (Right-Oriented)
                 material.Container(
                   child: material.Row(
                     mainAxisAlignment: material.MainAxisAlignment.end,
                     children: [
-                      // Grandchild 1: Favorite Icon
+                      material.Container(
+                        width: 28,
+                        height: 28,
+                        child: material.Center(
+                          child: material.Icon(
+                            material.Icons.search,
+                            size: 24,
+                            color: AppColors.primary,
+                          ),
+                        ),
+                      ),
+                      const material.SizedBox(width: 20),
                       material.Container(
                         width: 28,
                         height: 28,
@@ -508,25 +546,11 @@ class TitleIconDarkTopBar extends material.StatelessWidget {
                           child: material.Icon(
                             material.Icons.favorite,
                             size: 24,
-                            color: AppColors.primary, // Primary blue
+                            color: AppColors.primary,
                           ),
                         ),
                       ),
                       const material.SizedBox(width: 20),
-                      // Grandchild 2: Notification Icon
-                      material.Container(
-                        width: 28,
-                        height: 28,
-                        child: material.Center(
-                          child: material.Icon(
-                            material.Icons.notifications,
-                            size: 24,
-                            color: AppColors.primary, // Primary blue
-                          ),
-                        ),
-                      ),
-                      const material.SizedBox(width: 20),
-                      // Grandchild 3: Map Icon
                       material.Container(
                         width: 28,
                         height: 28,
@@ -534,11 +558,10 @@ class TitleIconDarkTopBar extends material.StatelessWidget {
                           child: material.Icon(
                             material.Icons.map,
                             size: 24,
-                            color: AppColors.primary, // Primary blue
+                            color: AppColors.primary,
                           ),
                         ),
                       ),
-                      // Actions (e.g., Search Icon)
                       ...effectiveActions.asMap().entries.map((entry) {
                         final index = entry.key;
                         final action = entry.value;
@@ -566,7 +589,6 @@ class TitleIconDarkTopBar extends material.StatelessWidget {
   }
 }
 
-// Full Navbar TopBar (Status Bar, Icon Back, Tab Bar)
 class FullNavbarTopBar extends material.StatelessWidget {
   final String title;
   final material.VoidCallback? onBackPressed;
@@ -589,7 +611,6 @@ class FullNavbarTopBar extends material.StatelessWidget {
 
   @override
   material.Widget build(material.BuildContext context) {
-    // Default actions for IconBackTopBar section
     final defaultActions = [
       material.IconButton(
         icon: const material.Icon(
@@ -624,11 +645,8 @@ class FullNavbarTopBar extends material.StatelessWidget {
 
     return material.Column(
       children: [
-        // First Row: Default TopBar (Status Bar)
         const DefaultTopBar(),
-        // Spacing: 16px
         const material.SizedBox(height: 16),
-        // Second Row: Modified Icon Back TopBar (App Logo, Back Icon, Title, Actions)
         material.Container(
           margin: const material.EdgeInsets.symmetric(vertical: 12),
           padding: const material.EdgeInsets.symmetric(horizontal: 24),
@@ -637,18 +655,14 @@ class FullNavbarTopBar extends material.StatelessWidget {
           child: material.Row(
             mainAxisAlignment: material.MainAxisAlignment.spaceBetween,
             children: [
-              // Left-Oriented: App Logo, Back Icon, Title
               material.Row(
                 children: [
-                  // App Logo (32x32)
                   const material.Icon(
                     material.Icons.circle,
                     color: AppColors.white,
                     size: 32,
                   ),
-                  // Spacing: 16px
                   const material.SizedBox(width: 16),
-                  // Back Icon (28x28)
                   material.IconButton(
                     icon: const material.Icon(
                       material.Icons.arrow_back,
@@ -663,9 +677,7 @@ class FullNavbarTopBar extends material.StatelessWidget {
                       minHeight: 28,
                     ),
                   ),
-                  // Spacing: 16px
                   const material.SizedBox(width: 16),
-                  // Title (H4 Bold, Greyscale 900)
                   material.Text(
                     title,
                     style: material.Theme.of(
@@ -674,7 +686,6 @@ class FullNavbarTopBar extends material.StatelessWidget {
                   ),
                 ],
               ),
-              // Right-Oriented: Actions (Icons, 28x28, 16px gap)
               material.Row(
                 mainAxisSize: material.MainAxisSize.min,
                 children:
@@ -699,9 +710,7 @@ class FullNavbarTopBar extends material.StatelessWidget {
             ],
           ),
         ),
-        // Spacing: 16px
         const material.SizedBox(height: 16),
-        // Third Row: Tab Bar (Nurse, Attendant, Physio)
         material.Container(
           padding: const material.EdgeInsets.symmetric(
             horizontal: 24,
@@ -727,7 +736,7 @@ class FullNavbarTopBar extends material.StatelessWidget {
                             style: material.Theme.of(
                               context,
                             ).textTheme.bodyLarge!.copyWith(
-                              fontWeight: material.FontWeight.w600, // Semibold
+                              fontWeight: material.FontWeight.w600,
                               color:
                                   isActive
                                       ? AppColors.primary
@@ -760,7 +769,6 @@ class FullNavbarTopBar extends material.StatelessWidget {
   }
 }
 
-// Home Page NavBar (Transparent Space + Row with Avatar, Title, Mode Toggle Icon)
 class HomePageNavBar extends material.StatelessWidget {
   final material.ThemeMode themeMode;
   final material.VoidCallback? onModeToggle;
@@ -775,34 +783,27 @@ class HomePageNavBar extends material.StatelessWidget {
 
   @override
   material.Widget build(material.BuildContext context) {
-    // Colors based on themeMode
     final material.Color avatarBackgroundColor =
         themeMode == material.ThemeMode.light
-            ? AppColors
-                .grey400 // Light mode: Greyscale 400
-            : AppColors.grey700; // Dark mode: Greyscale 700
+            ? AppColors.grey400
+            : AppColors.grey700;
     final material.Color titleColor =
         themeMode == material.ThemeMode.light
-            ? AppColors
-                .black // Light mode: Black
-            : AppColors.white; // Dark mode: White
+            ? AppColors.black
+            : AppColors.white;
     final material.Color modeIconColor =
         themeMode == material.ThemeMode.light
-            ? AppColors
-                .grey900 // Light mode: Greyscale 900
-            : AppColors.white; // Dark mode: White
+            ? AppColors.grey900
+            : AppColors.white;
 
     return material.Column(
       children: [
-        // Transparent Space (44px height for system info)
         const DefaultTopBar(),
-        // Row with Avatar, Title, and Mode Toggle Icon
         material.Container(
           margin: const material.EdgeInsets.fromLTRB(24, 24, 24, 0),
           child: material.Row(
             mainAxisAlignment: material.MainAxisAlignment.spaceBetween,
             children: [
-              // Left: 48x48 Container (e.g., for avatar)
               material.Container(
                 width: 48,
                 height: 48,
@@ -816,9 +817,7 @@ class HomePageNavBar extends material.StatelessWidget {
                   size: 32,
                 ),
               ),
-              // Spacing: 24px
               const material.SizedBox(width: 24),
-              // Middle: Expanded Text Column with App Name (H4 Bold)
               material.Expanded(
                 child: material.Column(
                   mainAxisSize: material.MainAxisSize.min,
@@ -833,9 +832,7 @@ class HomePageNavBar extends material.StatelessWidget {
                   ],
                 ),
               ),
-              // Spacing: 24px
               const material.SizedBox(width: 24),
-              // Right: 48x48 Container with Mode Toggle Icon
               material.Container(
                 width: 48,
                 height: 48,
@@ -843,10 +840,8 @@ class HomePageNavBar extends material.StatelessWidget {
                 child: material.IconButton(
                   icon: material.Icon(
                     themeMode == material.ThemeMode.light
-                        ? material
-                            .Icons
-                            .nightlight_round // Light mode: Moon icon
-                        : material.Icons.wb_sunny, // Dark mode: Sun icon
+                        ? material.Icons.nightlight_round
+                        : material.Icons.wb_sunny,
                     color: modeIconColor,
                     size: 24,
                   ),

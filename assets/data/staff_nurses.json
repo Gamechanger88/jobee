@@ -1,0 +1,2302 @@
+[
+  {
+    "id": 1000001,
+    "name": "Aditya Mehra",
+    "gender": "Male",
+    "location": "Rohini",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_indian.png",
+      "assets/images/male_india1.png",
+      "assets/images/male_white.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 10,
+    "qualifications": "M.Sc. Nursing",
+    "rates": {
+      "day_shift": 2200,
+      "night_shift": 2200,
+      "24_hour_shift": 3500
+    },
+    "clients": 25,
+    "distance_from_client": 15.2,
+    "ranking": 1
+  },
+  {
+    "id": 1000002,
+    "name": "Suman Kapoor",
+    "gender": "Female",
+    "location": "Sushant Lok",
+    "city": "Gurgaon",
+    "images": [
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 9,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 2150,
+      "night_shift": 2150,
+      "24_hour_shift": 3450
+    },
+    "clients": 22,
+    "distance_from_client": 6.8,
+    "ranking": 2
+  },
+  {
+    "id": 1000003,
+    "name": "Naveen Pillai",
+    "gender": "Male",
+    "location": "Sector 62",
+    "city": "Noida",
+    "images": [
+      "assets/images/male_indian2.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 9,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 2100,
+      "24_hour_shift": 3400
+    },
+    "clients": 20,
+    "distance_from_client": 24.1,
+    "ranking": 3
+  },
+  {
+    "id": 1000004,
+    "name": "Rhea Menon",
+    "gender": "Female",
+    "location": "Ballabgarh",
+    "city": "Faridabad",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 8,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 2050,
+      "night_shift": 2100,
+      "24_hour_shift": 3350
+    },
+    "clients": 18,
+    "distance_from_client": 3.5,
+    "ranking": 4
+  },
+  {
+    "id": 1000005,
+    "name": "Karan Patel",
+    "gender": "Male",
+    "location": "Knowledge Park",
+    "city": "Greater Noida",
+    "images": [
+      "assets/images/male_white2.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 8,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 2000,
+      "night_shift": 2050,
+      "24_hour_shift": 3300
+    },
+    "clients": 17,
+    "distance_from_client": 9.7,
+    "ranking": 5
+  },
+  {
+    "id": 1000006,
+    "name": "Leela Varghese",
+    "gender": "Female",
+    "location": "Vaishali",
+    "city": "Ghaziabad",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 8,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1950,
+      "night_shift": "Not interested",
+      "24_hour_shift": 3250
+    },
+    "clients": 16,
+    "distance_from_client": 12.4,
+    "ranking": 6
+  },
+  {
+    "id": 1000007,
+    "name": "Rohan Thomas",
+    "gender": "Male",
+    "location": "Dwarka",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_india1.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 7,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1900,
+      "night_shift": 1950,
+      "24_hour_shift": 3200
+    },
+    "clients": 15,
+    "distance_from_client": 6.2,
+    "ranking": 7
+  },
+  {
+    "id": 1000008,
+    "name": "Sita Reddy",
+    "gender": "Female",
+    "location": "DLF Phase 3",
+    "city": "Gurgaon",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white2.png",
+      "assets/images/female_white3.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 7,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1850,
+      "night_shift": 1900,
+      "24_hour_shift": 3150
+    },
+    "clients": 14,
+    "distance_from_client": 2.8,
+    "ranking": 8
+  },
+  {
+    "id": 1000009,
+    "name": "Vijay Joseph",
+    "gender": "Male",
+    "location": "Sector 18",
+    "city": "Noida",
+    "images": [
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png",
+      "assets/images/male_white_blazer.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 7,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1800,
+      "night_shift": 1850,
+      "24_hour_shift": 3100
+    },
+    "clients": 13,
+    "distance_from_client": 18.3,
+    "ranking": 9
+  },
+  {
+    "id": 1000010,
+    "name": "Nisha Iyer",
+    "gender": "Female",
+    "location": "Palam Vihar",
+    "city": "Gurgaon",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 7,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 1800,
+      "24_hour_shift": 3050
+    },
+    "clients": 12,
+    "distance_from_client": 5.9,
+    "ranking": 10
+  },
+  {
+    "id": 1000011,
+    "name": "Mukesh Kumar",
+    "gender": "Male",
+    "location": "Alpha 2",
+    "city": "Greater Noida",
+    "images": [
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 6,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1750,
+      "night_shift": 1800,
+      "24_hour_shift": 3000
+    },
+    "clients": 11,
+    "distance_from_client": 10.5,
+    "ranking": 11
+  },
+  {
+    "id": 1000012,
+    "name": "Geeta Pillai",
+    "gender": "Female",
+    "location": "Indirapuram",
+    "city": "Ghaziabad",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 6,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1700,
+      "night_shift": 1750,
+      "24_hour_shift": 2950
+    },
+    "clients": 10,
+    "distance_from_client": 14.7,
+    "ranking": 12
+  },
+  {
+    "id": 1000013,
+    "name": "Anil Varghese",
+    "gender": "Male",
+    "location": "Pitampura",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white_mall.png",
+      "assets/images/male_white2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 6,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1650,
+      "night_shift": "Not interested",
+      "24_hour_shift": 2900
+    },
+    "clients": 9,
+    "distance_from_client": 7.4,
+    "ranking": 13
+  },
+  {
+    "id": 1000014,
+    "name": "Seema Nair",
+    "gender": "Female",
+    "location": "Sohna Road",
+    "city": "Gurgaon",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 6,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1600,
+      "night_shift": 1650,
+      "24_hour_shift": 2850
+    },
+    "clients": 8,
+    "distance_from_client": 22.1,
+    "ranking": 14
+  },
+  {
+    "id": 1000015,
+    "name": "Vinod Mathew",
+    "gender": "Male",
+    "location": "Nehru Place",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_indian2.png",
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 6,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1550,
+      "night_shift": 1600,
+      "24_hour_shift": 2800
+    },
+    "clients": 7,
+    "distance_from_client": 4.1,
+    "ranking": 15
+  },
+  {
+    "id": 1000016,
+    "name": "Reena Yadav",
+    "gender": "Female",
+    "location": "Sector 15",
+    "city": "Faridabad",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 6,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 1550,
+      "24_hour_shift": 2750
+    },
+    "clients": 6,
+    "distance_from_client": 19.8,
+    "ranking": 16
+  },
+  {
+    "id": 1000017,
+    "name": "Jiju Thomas",
+    "gender": "Male",
+    "location": "Beta 1",
+    "city": "Greater Noida",
+    "images": [
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_indian.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 6,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1500,
+      "night_shift": 1550,
+      "24_hour_shift": 2700
+    },
+    "clients": 6,
+    "distance_from_client": 11.9,
+    "ranking": 17
+  },
+  {
+    "id": 1000018,
+    "name": "Komal Sharma",
+    "gender": "Female",
+    "location": "Kaushambi",
+    "city": "Ghaziabad",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1450,
+      "night_shift": 1500,
+      "24_hour_shift": 2650
+    },
+    "clients": 5,
+    "distance_from_client": 8.3,
+    "ranking": 18
+  },
+  {
+    "id": 1000019,
+    "name": "Sanjay Yadav",
+    "gender": "Male",
+    "location": "Shalimar Bagh",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1400,
+      "night_shift": "Not interested",
+      "24_hour_shift": 2600
+    },
+    "clients": 5,
+    "distance_from_client": 16.4,
+    "ranking": 19
+  },
+  {
+    "id": 1000020,
+    "name": "Manju Patel",
+    "gender": "Female",
+    "location": "South City",
+    "city": "Gurgaon",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1350,
+      "night_shift": 1400,
+      "24_hour_shift": 2550
+    },
+    "clients": 4,
+    "distance_from_client": 5.2,
+    "ranking": 20
+  },
+  {
+    "id": 1000021,
+    "name": "Liju Nair",
+    "gender": "Male",
+    "location": "Mayur Vihar",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1300,
+      "night_shift": 1350,
+      "24_hour_shift": 2500
+    },
+    "clients": 4,
+    "distance_from_client": 13.6,
+    "ranking": 21
+  },
+  {
+    "id": 1000022,
+    "name": "Pooja Devi",
+    "gender": "Female",
+    "location": "Sector 56",
+    "city": "Gurgaon",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1300,
+      "night_shift": 1350,
+      "24_hour_shift": 2450
+    },
+    "clients": 4,
+    "distance_from_client": 9.8,
+    "ranking": 22
+  },
+  {
+    "id": 1000023,
+    "name": "Vinod Sharma",
+    "gender": "Male",
+    "location": "Sector 10",
+    "city": "Noida",
+    "images": [
+      "assets/images/male_indian2.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 1300,
+      "24_hour_shift": 2400
+    },
+    "clients": 4,
+    "distance_from_client": 7.2,
+    "ranking": 23
+  },
+  {
+    "id": 1000024,
+    "name": "Swati Thakur",
+    "gender": "Female",
+    "location": "NIT",
+    "city": "Faridabad",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1250,
+      "night_shift": 1300,
+      "24_hour_shift": 2350
+    },
+    "clients": 3,
+    "distance_from_client": 21.3,
+    "ranking": 24
+  },
+  {
+    "id": 1000025,
+    "name": "Rajesh Kumar",
+    "gender": "Male",
+    "location": "Gamma 1",
+    "city": "Greater Noida",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1250,
+      "night_shift": 1300,
+      "24_hour_shift": 2300
+    },
+    "clients": 3,
+    "distance_from_client": 4.9,
+    "ranking": 25
+  },
+  {
+    "id": 1000026,
+    "name": "Monika Rawat",
+    "gender": "Female",
+    "location": "Raj Nagar",
+    "city": "Ghaziabad",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1200,
+      "night_shift": "Not interested",
+      "24_hour_shift": 2250
+    },
+    "clients": 3,
+    "distance_from_client": 17.5,
+    "ranking": 26
+  },
+  {
+    "id": 1000027,
+    "name": "Sandeep Varghese",
+    "gender": "Male",
+    "location": "Paschim Vihar",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1200,
+      "night_shift": 1250,
+      "24_hour_shift": 2200
+    },
+    "clients": 3,
+    "distance_from_client": 11.1,
+    "ranking": 27
+  },
+  {
+    "id": 1000028,
+    "name": "Rekha Kumari",
+    "gender": "Female",
+    "location": "Udyog Vihar",
+    "city": "Gurgaon",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1150,
+      "night_shift": 1200,
+      "24_hour_shift": 2150
+    },
+    "clients": 3,
+    "distance_from_client": 6.5,
+    "ranking": 28
+  },
+  {
+    "id": 1000029,
+    "name": "Vijay Singh",
+    "gender": "Male",
+    "location": "Sector 44",
+    "city": "Noida",
+    "images": [
+      "assets/images/male_indian.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1150,
+      "night_shift": 1200,
+      "24_hour_shift": 2100
+    },
+    "clients": 3,
+    "distance_from_client": 14.2,
+    "ranking": 29
+  },
+  {
+    "id": 1000030,
+    "name": "Tanuja Gupta",
+    "gender": "Female",
+    "location": "Green Park",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 1150,
+      "24_hour_shift": 2050
+    },
+    "clients": 3,
+    "distance_from_client": 8.9,
+    "ranking": 30
+  },
+  {
+    "id": 1000031,
+    "name": "Arun Varghese",
+    "gender": "Male",
+    "location": "Delta 2",
+    "city": "Greater Noida",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 2000
+    },
+    "clients": 3,
+    "distance_from_client": 19.3,
+    "ranking": 31
+  },
+  {
+    "id": 1000032,
+    "name": "Nalini Joshi",
+    "gender": "Female",
+    "location": "Crossing Republik",
+    "city": "Ghaziabad",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1950
+    },
+    "clients": 3,
+    "distance_from_client": 5.7,
+    "ranking": 32
+  },
+  {
+    "id": 1000033,
+    "name": "Pradeep Nair",
+    "gender": "Male",
+    "location": "Vikaspuri",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1900
+    },
+    "clients": 3,
+    "distance_from_client": 12.8,
+    "ranking": 33
+  },
+  {
+    "id": 1000034,
+    "name": "Kiran Yadav",
+    "gender": "Female",
+    "location": "Sector 21",
+    "city": "Faridabad",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1850
+    },
+    "clients": 3,
+    "distance_from_client": 16.1,
+    "ranking": 34
+  },
+  {
+    "id": 1000035,
+    "name": "Mukesh Varghese",
+    "gender": "Male",
+    "location": "Omega 1",
+    "city": "Greater Noida",
+    "images": [
+      "assets/images/male_indian2.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1800
+    },
+    "clients": 3,
+    "distance_from_client": 9.4,
+    "ranking": 35
+  },
+  {
+    "id": 1000036,
+    "name": "Rita Sharma",
+    "gender": "Female",
+    "location": "Vasundhara",
+    "city": "Ghaziabad",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": "Not interested",
+      "24_hour_shift": 1750
+    },
+    "clients": 3,
+    "distance_from_client": 20.2,
+    "ranking": 36
+  },
+  {
+    "id": 1000037,
+    "name": "Sunil Thomas",
+    "gender": "Male",
+    "location": "Janakpuri",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1700
+    },
+    "clients": 3,
+    "distance_from_client": 7.9,
+    "ranking": 37
+  },
+  {
+    "id": 1000038,
+    "name": "Anita Singh",
+    "gender": "Female",
+    "location": "Cyber City",
+    "city": "Gurgaon",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1650
+    },
+    "clients": 3,
+    "distance_from_client": 11.3,
+    "ranking": 38
+  },
+  {
+    "id": 1000039,
+    "name": "Ravi Varghese",
+    "gender": "Male",
+    "location": "Sector 16",
+    "city": "Noida",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1600
+    },
+    "clients": 3,
+    "distance_from_client": 18.7,
+    "ranking": 39
+  },
+  {
+    "id": 1000040,
+    "name": "Sarita Yadav",
+    "gender": "Female",
+    "location": "Sector 5",
+    "city": "Faridabad",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 5,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1550
+    },
+    "clients": 3,
+    "distance_from_client": 6.1,
+    "ranking": 40
+  },
+  {
+    "id": 1000041,
+    "name": "Ashok Nair",
+    "gender": "Male",
+    "location": "Chi 2",
+    "city": "Greater Noida",
+    "images": [
+      "assets/images/male_indian.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1540
+    },
+    "clients": 2,
+    "distance_from_client": 14.5,
+    "ranking": 41
+  },
+  {
+    "id": 1000042,
+    "name": "Geeta Sharma",
+    "gender": "Female",
+    "location": "Shahdara",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1530
+    },
+    "clients": 2,
+    "distance_from_client": 9.2,
+    "ranking": 42
+  },
+  {
+    "id": 1000043,
+    "name": "Naresh Varghese",
+    "gender": "Male",
+    "location": "Greater Kailash",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1520
+    },
+    "clients": 2,
+    "distance_from_client": 22.4,
+    "ranking": 43
+  },
+  {
+    "id": 1000044,
+    "name": "Shilpa Singh",
+    "gender": "Female",
+    "location": "Golf Course Road",
+    "city": "Gurgaon",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1510
+    },
+    "clients": 2,
+    "distance_from_client": 7.6,
+    "ranking": 44
+  },
+  {
+    "id": 1000045,
+    "name": "Dinesh Yadav",
+    "gender": "Male",
+    "location": "Sector 120",
+    "city": "Noida",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 2,
+    "distance_from_client": 10.7,
+    "ranking": 45
+  },
+  {
+    "id": 1000046,
+    "name": "Komal Nair",
+    "gender": "Female",
+    "location": "Charmwood Village",
+    "city": "Faridabad",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": "Not interested",
+      "24_hour_shift": 1500
+    },
+    "clients": 2,
+    "distance_from_client": 16.8,
+    "ranking": 46
+  },
+  {
+    "id": 1000047,
+    "name": "Ramesh Thomas",
+    "gender": "Male",
+    "location": "Zeta 1",
+    "city": "Greater Noida",
+    "images": [
+      "assets/images/male_indian.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 2,
+    "distance_from_client": 5.4,
+    "ranking": 47
+  },
+  {
+    "id": 1000048,
+    "name": "Suman Singh",
+    "gender": "Female",
+    "location": "Vijay Nagar",
+    "city": "Ghaziabad",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 2,
+    "distance_from_client": 13.9,
+    "ranking": 48
+  },
+  {
+    "id": 1000049,
+    "name": "Yogesh Varghese",
+    "gender": "Male",
+    "location": "Saket",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 2,
+    "distance_from_client": 8.1,
+    "ranking": 49
+  },
+  {
+    "id": 1000050,
+    "name": "Kirti Reddy",
+    "gender": "Female",
+    "location": "MG Road",
+    "city": "Gurgaon",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "B.Sc. Nursing",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 2,
+    "distance_from_client": 11.5,
+    "ranking": 50
+  },
+  {
+    "id": 1000051,
+    "name": "Vikas Kumar",
+    "gender": "Male",
+    "location": "Laxmi Nagar",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_indian.png",
+      "assets/images/male_india1.png",
+      "assets/images/male_white.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 2,
+    "distance_from_client": 8.7,
+    "ranking": 51
+  },
+  {
+    "id": 1000052,
+    "name": "Suman Devi",
+    "gender": "Female",
+    "location": "Golf Links",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 2,
+    "distance_from_client": 14.2,
+    "ranking": 52
+  },
+  {
+    "id": 1000053,
+    "name": "Pankaj Singh",
+    "gender": "Male",
+    "location": "Sector 45",
+    "city": "Noida",
+    "images": [
+      "assets/images/male_indian2.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 1100,
+      "24_hour_shift": 1500
+    },
+    "clients": 2,
+    "distance_from_client": 19.5,
+    "ranking": 53
+  },
+  {
+    "id": 1000054,
+    "name": "Reena Kumari",
+    "gender": "Female",
+    "location": "Surajkund",
+    "city": "Faridabad",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 2,
+    "distance_from_client": 3.8,
+    "ranking": 54
+  },
+  {
+    "id": 1000055,
+    "name": "Mohan Kumar",
+    "gender": "Male",
+    "location": "Zeta 2",
+    "city": "Greater Noida",
+    "images": [
+      "assets/images/male_white2.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 2,
+    "distance_from_client": 12.1,
+    "ranking": 55
+  },
+  {
+    "id": 1000056,
+    "name": "Kusum Devi",
+    "gender": "Female",
+    "location": "Karkardooma",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": "Not interested",
+      "24_hour_shift": 1500
+    },
+    "clients": 2,
+    "distance_from_client": 17.9,
+    "ranking": 56
+  },
+  {
+    "id": 1000057,
+    "name": "Raju Singh",
+    "gender": "Male",
+    "location": "Ashok Vihar",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_india1.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 2,
+    "distance_from_client": 6.4,
+    "ranking": 57
+  },
+  {
+    "id": 1000058,
+    "name": "Meena Kumari",
+    "gender": "Female",
+    "location": "Sikandarpur",
+    "city": "Gurgaon",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white2.png",
+      "assets/images/female_white3.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 2,
+    "distance_from_client": 2.5,
+    "ranking": 58
+  },
+  {
+    "id": 1000059,
+    "name": "Sanjay Kumar",
+    "gender": "Male",
+    "location": "Sector 37",
+    "city": "Noida",
+    "images": [
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png",
+      "assets/images/male_white_blazer.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 2,
+    "distance_from_client": 20.3,
+    "ranking": 59
+  },
+  {
+    "id": 1000060,
+    "name": "Lata Devi",
+    "gender": "Female",
+    "location": "Chhattarpur",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 4,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 1100,
+      "24_hour_shift": 1500
+    },
+    "clients": 2,
+    "distance_from_client": 10.8,
+    "ranking": 60
+  },
+  {
+    "id": 1000061,
+    "name": "Naresh Kumar",
+    "gender": "Male",
+    "location": "Mu 1",
+    "city": "Greater Noida",
+    "images": [
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 3,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 15.4,
+    "ranking": 61
+  },
+  {
+    "id": 1000062,
+    "name": "Savita Rani",
+    "gender": "Female",
+    "location": "Sahibabad",
+    "city": "Ghaziabad",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 3,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 7.8,
+    "ranking": 62
+  },
+  {
+    "id": 1000063,
+    "name": "Brijesh Yadav",
+    "gender": "Male",
+    "location": "Karol Bagh",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white_mall.png",
+      "assets/images/male_white2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 3,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": "Not interested",
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 13.2,
+    "ranking": 63
+  },
+  {
+    "id": 1000064,
+    "name": "Pinki Devi",
+    "gender": "Female",
+    "location": "Ardee City",
+    "city": "Gurgaon",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 3,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 22.7,
+    "ranking": 64
+  },
+  {
+    "id": 1000065,
+    "name": "Dilip Kumar",
+    "gender": "Male",
+    "location": "Sector 63",
+    "city": "Noida",
+    "images": [
+      "assets/images/male_indian2.png",
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 3,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 4.3,
+    "ranking": 65
+  },
+  {
+    "id": 1000066,
+    "name": "Rani Kumari",
+    "gender": "Female",
+    "location": "Neeti Bagh",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 3,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 1100,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 18.1,
+    "ranking": 66
+  },
+  {
+    "id": 1000067,
+    "name": "Kailash Singh",
+    "gender": "Male",
+    "location": "Phi 3",
+    "city": "Greater Noida",
+    "images": [
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_indian.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 3,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 9.6,
+    "ranking": 67
+  },
+  {
+    "id": 1000068,
+    "name": "Seema Devi",
+    "gender": "Female",
+    "location": "Dilshad Garden",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 3,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 16.5,
+    "ranking": 68
+  },
+  {
+    "id": 1000069,
+    "name": "Pramod Kumar",
+    "gender": "Male",
+    "location": "Model Town",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 3,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": "Not interested",
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 5.1,
+    "ranking": 69
+  },
+  {
+    "id": 1000070,
+    "name": "Nisha Rani",
+    "gender": "Female",
+    "location": "Huda City Centre",
+    "city": "Gurgaon",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 3,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 21.4,
+    "ranking": 70
+  },
+  {
+    "id": 1000071,
+    "name": "Rakesh Yadav",
+    "gender": "Male",
+    "location": "Sector 65",
+    "city": "Noida",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 2,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 12.7,
+    "ranking": 71
+  },
+  {
+    "id": 1000072,
+    "name": "Chanda Devi",
+    "gender": "Female",
+    "location": "Vivek Vihar",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 2,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 8.2,
+    "ranking": 72
+  },
+  {
+    "id": 1000073,
+    "name": "Suresh Kumar",
+    "gender": "Male",
+    "location": "Punjabi Bagh",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 2,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 1100,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 17.1,
+    "ranking": 73
+  },
+  {
+    "id": 1000074,
+    "name": "Rita Kumari",
+    "gender": "Female",
+    "location": "Suncity",
+    "city": "Gurgaon",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 2,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 6.9,
+    "ranking": 74
+  },
+  {
+    "id": 1000075,
+    "name": "Manoj Kumar",
+    "gender": "Male",
+    "location": "Sector 22",
+    "city": "Faridabad",
+    "images": [
+      "assets/images/male_indian.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 2,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 23.8,
+    "ranking": 75
+  },
+  {
+    "id": 1000076,
+    "name": "Kamla Devi",
+    "gender": "Female",
+    "location": "Anand Vihar",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 2,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": "Not interested",
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 11.3,
+    "ranking": 76
+  },
+  {
+    "id": 1000077,
+    "name": "Vijay Singh",
+    "gender": "Male",
+    "location": "Rani Bagh",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 2,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 5.6,
+    "ranking": 77
+  },
+  {
+    "id": 1000078,
+    "name": "Poonam Devi",
+    "gender": "Female",
+    "location": "South Extension",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 2,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 19.7,
+    "ranking": 78
+  },
+  {
+    "id": 1000079,
+    "name": "Ram Kumar",
+    "gender": "Male",
+    "location": "Sector 11",
+    "city": "Noida",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 2,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 14.9,
+    "ranking": 79
+  },
+  {
+    "id": 1000080,
+    "name": "Saroj Devi",
+    "gender": "Female",
+    "location": "Badarpur",
+    "city": "Faridabad",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 2,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 1100,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 8.4,
+    "ranking": 80
+  },
+  {
+    "id": 1000081,
+    "name": "Anand Kumar",
+    "gender": "Male",
+    "location": "Eta 2",
+    "city": "Greater Noida",
+    "images": [
+      "assets/images/male_indian2.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 1,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 16.2,
+    "ranking": 81
+  },
+  {
+    "id": 1000082,
+    "name": "Usha Rani",
+    "gender": "Female",
+    "location": "Patel Nagar",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 1,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 7.3,
+    "ranking": 82
+  },
+  {
+    "id": 1000083,
+    "name": "Hari Singh",
+    "gender": "Male",
+    "location": "Moti Nagar",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 1,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": "Not interested",
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 20.8,
+    "ranking": 83
+  },
+  {
+    "id": 1000084,
+    "name": "Mamta Devi",
+    "gender": "Female",
+    "location": "Surya Vihar",
+    "city": "Gurgaon",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 1,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 9.1,
+    "ranking": 84
+  },
+  {
+    "id": 1000085,
+    "name": "Om Prakash",
+    "gender": "Male",
+    "location": "Sector 23",
+    "city": "Faridabad",
+    "images": [
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 1,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 13.5,
+    "ranking": 85
+  },
+  {
+    "id": 1000086,
+    "name": "Kiran Devi",
+    "gender": "Female",
+    "location": "Preet Vihar",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 1,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 6.7,
+    "ranking": 86
+  },
+  {
+    "id": 1000087,
+    "name": "Lal Singh",
+    "gender": "Male",
+    "location": "Kirti Nagar",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 1,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 18.4,
+    "ranking": 87
+  },
+  {
+    "id": 1000088,
+    "name": "Savitri Devi",
+    "gender": "Female",
+    "location": "Palam Colony",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 1,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 1100,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 10.2,
+    "ranking": 88
+  },
+  {
+    "id": 1000089,
+    "name": "Gopal Kumar",
+    "gender": "Male",
+    "location": "Sector 49",
+    "city": "Noida",
+    "images": [
+      "assets/images/male_indian.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 1,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 15.8,
+    "ranking": 89
+  },
+  {
+    "id": 1000090,
+    "name": "Anju Devi",
+    "gender": "Female",
+    "location": "Okhla",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 1,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 1,
+    "distance_from_client": 7.5,
+    "ranking": 90
+  },
+  {
+    "id": 1000091,
+    "name": "Shyam Singh",
+    "gender": "Male",
+    "location": "Sigma 2",
+    "city": "Greater Noida",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 0,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 0,
+    "distance_from_client": 19.2,
+    "ranking": 91
+  },
+  {
+    "id": 1000092,
+    "name": "Parvati Devi",
+    "gender": "Female",
+    "location": "Shastri Nagar",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 0,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 0,
+    "distance_from_client": 8.8,
+    "ranking": 92
+  },
+  {
+    "id": 1000093,
+    "name": "Madan Kumar",
+    "gender": "Male",
+    "location": "Rajouri Garden",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 0,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": "Not interested",
+      "24_hour_shift": 1500
+    },
+    "clients": 0,
+    "distance_from_client": 14.1,
+    "ranking": 93
+  },
+  {
+    "id": 1000094,
+    "name": "Guddi Devi",
+    "gender": "Female",
+    "location": "Sector 47",
+    "city": "Gurgaon",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 0,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 0,
+    "distance_from_client": 21.6,
+    "ranking": 94
+  },
+  {
+    "id": 1000095,
+    "name": "Babu Lal",
+    "gender": "Male",
+    "location": "Sarita Vihar",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_indian2.png",
+      "assets/images/female_white3.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 0,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 0,
+    "distance_from_client": 10.4,
+    "ranking": 95
+  },
+  {
+    "id": 1000096,
+    "name": "Shanti Devi",
+    "gender": "Female",
+    "location": "Geeta Colony",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 0,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 0,
+    "distance_from_client": 16.9,
+    "ranking": 96
+  },
+  {
+    "id": 1000097,
+    "name": "Ratan Singh",
+    "gender": "Male",
+    "location": "Naraina",
+    "city": "Delhi",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 0,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 0,
+    "distance_from_client": 5.2,
+    "ranking": 97
+  },
+  {
+    "id": 1000098,
+    "name": "Meera Devi",
+    "gender": "Female",
+    "location": "Malviya Nagar",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 0,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 1100,
+      "24_hour_shift": 1500
+    },
+    "clients": 0,
+    "distance_from_client": 20.1,
+    "ranking": 98
+  },
+  {
+    "id": 1000099,
+    "name": "Jagdish Kumar",
+    "gender": "Male",
+    "location": "Sector 14",
+    "city": "Gurgaon",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 0,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 0,
+    "distance_from_client": 12.3,
+    "ranking": 99
+  },
+  {
+    "id": 1000100,
+    "name": "Phoolwati Devi",
+    "gender": "Female",
+    "location": "Kalkaji",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Staff Nurse",
+    "experience": 0,
+    "qualifications": "GNM",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1500
+    },
+    "clients": 0,
+    "distance_from_client": 9.9,
+    "ranking": 100
+  }
+]

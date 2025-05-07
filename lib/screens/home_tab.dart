@@ -46,19 +46,6 @@ class HomeTab extends material.StatelessWidget {
             // Spacing: 24px
             const material.SizedBox(height: 24),
             // Fifth Row: Horizontal Scrollable JobCard Section
-            material.SingleChildScrollView(
-              scrollDirection: material.Axis.horizontal,
-              child: material.Row(
-                mainAxisSize: material.MainAxisSize.min,
-                children: [
-                  const JobCard(),
-                  const material.SizedBox(width: 20), // Spacing between cards
-                  const JobCard(),
-                  const material.SizedBox(width: 20),
-                  const JobCard(),
-                ],
-              ),
-            ),
             // Spacing: 24px
             const material.SizedBox(height: 24),
             // Sixth Row: Alert Component (Success variant)

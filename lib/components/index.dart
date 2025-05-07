@@ -19,4 +19,7 @@ export 'alert.dart';
 export 'job_card.dart';
 export 'progress_line.dart';
 export 'lesson_list.dart';
-export 'subjects_list.dart'; // Added export for SubjectsList
+export 'subjects_list.dart';
+export 'nav_icon.dart';
+export 'user_type_selector.dart';
+export 'secondary_filter.dart';

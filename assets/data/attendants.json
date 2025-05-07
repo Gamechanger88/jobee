@@ -1,0 +1,2202 @@
+[
+  {
+    "id": 1,
+    "name": "Rohan Sharma",
+    "gender": "Male",
+    "location": "Rohini",
+    "images": [
+      "assets/images/male_indian.png",
+      "assets/images/male_india1.png",
+      "assets/images/male_white.png"
+    ],
+    "role": "Attendant",
+    "experience": 10,
+    "qualifications": "Advanced Diploma in Patient Care",
+    "rates": {
+      "day_shift": 1200,
+      "night_shift": 1200,
+      "24_hour_shift": 2000
+    },
+    "clients": 25,
+    "distance_from_client": 15.2,
+    "ranking": 1
+  },
+  {
+    "id": 2,
+    "name": "Neha Gupta",
+    "gender": "Female",
+    "location": "Sushant Lok",
+    "images": [
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Attendant",
+    "experience": 9,
+    "qualifications": "Certified Caregiver with Specialization",
+    "rates": {
+      "day_shift": 1150,
+      "night_shift": 1150,
+      "24_hour_shift": 1950
+    },
+    "clients": 22,
+    "distance_from_client": 6.8,
+    "ranking": 2
+  },
+  {
+    "id": 3,
+    "name": "Vikram Singh",
+    "gender": "Male",
+    "location": "Sector 62",
+    "images": [
+      "assets/images/male_indian2.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Attendant",
+    "experience": 9,
+    "qualifications": "Diploma in Patient Care",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 1100,
+      "24_hour_shift": 1900
+    },
+    "clients": 20,
+    "distance_from_client": 24.1,
+    "ranking": 3
+  },
+  {
+    "id": 4,
+    "name": "Anjali Yadav",
+    "gender": "Female",
+    "location": "Ballabgarh",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png"
+    ],
+    "role": "Attendant",
+    "experience": 8,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 1100,
+      "night_shift": 1150,
+      "24_hour_shift": 1850
+    },
+    "clients": 18,
+    "distance_from_client": 3.5,
+    "ranking": 4
+  },
+  {
+    "id": 5,
+    "name": "Amit Kumar",
+    "gender": "Male",
+    "location": "Knowledge Park",
+    "images": [
+      "assets/images/male_white2.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Attendant",
+    "experience": 8,
+    "qualifications": "Diploma in Caregiving",
+    "rates": {
+      "day_shift": 1050,
+      "night_shift": 1100,
+      "24_hour_shift": 1800
+    },
+    "clients": 17,
+    "distance_from_client": 9.7,
+    "ranking": 5
+  },
+  {
+    "id": 6,
+    "name": "Pooja Verma",
+    "gender": "Female",
+    "location": "Vaishali",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png"
+    ],
+    "role": "Attendant",
+    "experience": 8,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 1000,
+      "night_shift": "Not interested",
+      "24_hour_shift": 1750
+    },
+    "clients": 16,
+    "distance_from_client": 12.4,
+    "ranking": 6
+  },
+  {
+    "id": 7,
+    "name": "Rahul Yadav",
+    "gender": "Male",
+    "location": "Dwarka",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_india1.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Attendant",
+    "experience": 7,
+    "qualifications": "Diploma in Patient Care",
+    "rates": {
+      "day_shift": 1000,
+      "night_shift": 1050,
+      "24_hour_shift": 1700
+    },
+    "clients": 15,
+    "distance_from_client": 6.2,
+    "ranking": 7
+  },
+  {
+    "id": 8,
+    "name": "Shalini Mishra",
+    "gender": "Female",
+    "location": "DLF Phase 3",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white2.png",
+      "assets/images/female_white3.png"
+    ],
+    "role": "Attendant",
+    "experience": 7,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 950,
+      "night_shift": 1000,
+      "24_hour_shift": 1650
+    },
+    "clients": 14,
+    "distance_from_client": 2.8,
+    "ranking": 8
+  },
+  {
+    "id": 9,
+    "name": "Sanjay Sharma",
+    "gender": "Male",
+    "location": "Sector 18",
+    "images": [
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png",
+      "assets/images/male_white_blazer.png"
+    ],
+    "role": "Attendant",
+    "experience": 7,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 900,
+      "night_shift": 950,
+      "24_hour_shift": 1600
+    },
+    "clients": 13,
+    "distance_from_client": 18.3,
+    "ranking": 9
+  },
+  {
+    "id": 10,
+    "name": "Kavita Singh",
+    "gender": "Female",
+    "location": "Palam Vihar",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Attendant",
+    "experience": 7,
+    "qualifications": "Diploma in Caregiving",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 900,
+      "24_hour_shift": 1550
+    },
+    "clients": 12,
+    "distance_from_client": 5.9,
+    "ranking": 10
+  },
+  {
+    "id": 11,
+    "name": "Rakesh Kumar",
+    "gender": "Male",
+    "location": "Alpha 2",
+    "images": [
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Attendant",
+    "experience": 6,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 850,
+      "night_shift": 900,
+      "24_hour_shift": 1500
+    },
+    "clients": 11,
+    "distance_from_client": 10.5,
+    "ranking": 11
+  },
+  {
+    "id": 12,
+    "name": "Manisha Rawat",
+    "gender": "Female",
+    "location": "Indirapuram",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Attendant",
+    "experience": 6,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 800,
+      "night_shift": 850,
+      "24_hour_shift": 1450
+    },
+    "clients": 10,
+    "distance_from_client": 14.7,
+    "ranking": 12
+  },
+  {
+    "id": 13,
+    "name": "Ajay Verma",
+    "gender": "Male",
+    "location": "Pitampura",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white_mall.png",
+      "assets/images/male_white2.png"
+    ],
+    "role": "Attendant",
+    "experience": 6,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 800,
+      "night_shift": "Not interested",
+      "24_hour_shift": 1400
+    },
+    "clients": 9,
+    "distance_from_client": 7.4,
+    "ranking": 13
+  },
+  {
+    "id": 14,
+    "name": "Divya Chopra",
+    "gender": "Female",
+    "location": "Sohna Road",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Attendant",
+    "experience": 6,
+    "qualifications": "Diploma in Patient Care",
+    "rates": {
+      "day_shift": 750,
+      "night_shift": 800,
+      "24_hour_shift": 1350
+    },
+    "clients": 8,
+    "distance_from_client": 22.1,
+    "ranking": 14
+  },
+  {
+    "id": 15,
+    "name": "Manoj Singh",
+    "gender": "Male",
+    "location": "Nehru Place",
+    "images": [
+      "assets/images/male_indian2.png",
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png"
+    ],
+    "role": "Attendant",
+    "experience": 6,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 700,
+      "night_shift": 750,
+      "24_hour_shift": 1300
+    },
+    "clients": 7,
+    "distance_from_client": 4.1,
+    "ranking": 15
+  },
+  {
+    "id": 16,
+    "name": "Riya Sharma",
+    "gender": "Female",
+    "location": "Sector 15",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Attendant",
+    "experience": 6,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 700,
+      "24_hour_shift": 1250
+    },
+    "clients": 6,
+    "distance_from_client": 19.8,
+    "ranking": 16
+  },
+  {
+    "id": 17,
+    "name": "Deepak Kumar",
+    "gender": "Male",
+    "location": "Beta 1",
+    "images": [
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_indian.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Attendant",
+    "experience": 6,
+    "qualifications": "Diploma in Caregiving",
+    "rates": {
+      "day_shift": 700,
+      "night_shift": 750,
+      "24_hour_shift": 1200
+    },
+    "clients": 6,
+    "distance_from_client": 11.9,
+    "ranking": 17
+  },
+  {
+    "id": 18,
+    "name": "Sonam Rana",
+    "gender": "Female",
+    "location": "Kaushambi",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 1150
+    },
+    "clients": 5,
+    "distance_from_client": 8.3,
+    "ranking": 18
+  },
+  {
+    "id": 19,
+    "name": "Suresh Yadav",
+    "gender": "Male",
+    "location": "Shalimar Bagh",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": "Not interested",
+      "24_hour_shift": 1100
+    },
+    "clients": 5,
+    "distance_from_client": 16.4,
+    "ranking": 19
+  },
+  {
+    "id": 20,
+    "name": "Preeti Singh",
+    "gender": "Female",
+    "location": "South City",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 1050
+    },
+    "clients": 4,
+    "distance_from_client": 5.2,
+    "ranking": 20
+  },
+  {
+    "id": 21,
+    "name": "Anil Kumar",
+    "gender": "Male",
+    "location": "Mayur Vihar",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 1050
+    },
+    "clients": 4,
+    "distance_from_client": 13.6,
+    "ranking": 21
+  },
+  {
+    "id": 22,
+    "name": "Jyoti Pandey",
+    "gender": "Female",
+    "location": "Sector 56",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 1000
+    },
+    "clients": 4,
+    "distance_from_client": 9.8,
+    "ranking": 22
+  },
+  {
+    "id": 23,
+    "name": "Vinod Sharma",
+    "gender": "Male",
+    "location": "Sector 10",
+    "images": [
+      "assets/images/male_indian2.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 650,
+      "24_hour_shift": 1000
+    },
+    "clients": 4,
+    "distance_from_client": 7.2,
+    "ranking": 23
+  },
+  {
+    "id": 24,
+    "name": "Swati Thakur",
+    "gender": "Female",
+    "location": "NIT",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 21.3,
+    "ranking": 24
+  },
+  {
+    "id": 25,
+    "name": "Rajesh Kumar",
+    "gender": "Male",
+    "location": "Gamma 1",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 4.9,
+    "ranking": 25
+  },
+  {
+    "id": 26,
+    "name": "Monika Verma",
+    "gender": "Female",
+    "location": "Raj Nagar",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": "Not interested",
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 17.5,
+    "ranking": 26
+  },
+  {
+    "id": 27,
+    "name": "Sandeep Singh",
+    "gender": "Male",
+    "location": "Paschim Vihar",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 11.1,
+    "ranking": 27
+  },
+  {
+    "id": 28,
+    "name": "Rekha Sharma",
+    "gender": "Female",
+    "location": "Udyog Vihar",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 6.5,
+    "ranking": 28
+  },
+  {
+    "id": 29,
+    "name": "Vijay Kumar",
+    "gender": "Male",
+    "location": "Sector 44",
+    "images": [
+      "assets/images/male_indian.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 14.2,
+    "ranking": 29
+  },
+  {
+    "id": 30,
+    "name": "Tanya Gupta",
+    "gender": "Female",
+    "location": "Green Park",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 650,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 8.9,
+    "ranking": 30
+  },
+  {
+    "id": 31,
+    "name": "Arun Sharma",
+    "gender": "Male",
+    "location": "Delta 2",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 19.3,
+    "ranking": 31
+  },
+  {
+    "id": 32,
+    "name": "Nidhi Joshi",
+    "gender": "Female",
+    "location": "Crossing Republik",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 5.7,
+    "ranking": 32
+  },
+  {
+    "id": 33,
+    "name": "Pradeep Kumar",
+    "gender": "Male",
+    "location": "Vikaspuri",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 12.8,
+    "ranking": 33
+  },
+  {
+    "id": 34,
+    "name": "Kiran Yadav",
+    "gender": "Female",
+    "location": "Sector 21",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 16.1,
+    "ranking": 34
+  },
+  {
+    "id": 35,
+    "name": "Mukesh Singh",
+    "gender": "Male",
+    "location": "Omega 1",
+    "images": [
+      "assets/images/male_indian2.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 9.4,
+    "ranking": 35
+  },
+  {
+    "id": 36,
+    "name": "Ritu Sharma",
+    "gender": "Female",
+    "location": "Vasundhara",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": "Not interested",
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 20.2,
+    "ranking": 36
+  },
+  {
+    "id": 37,
+    "name": "Sunil Kumar",
+    "gender": "Male",
+    "location": "Janakpuri",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 7.9,
+    "ranking": 37
+  },
+  {
+    "id": 38,
+    "name": "Anita Singh",
+    "gender": "Female",
+    "location": "Cyber City",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 11.3,
+    "ranking": 38
+  },
+  {
+    "id": 39,
+    "name": "Ravi Sharma",
+    "gender": "Male",
+    "location": "Sector 16",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 18.7,
+    "ranking": 39
+  },
+  {
+    "id": 40,
+    "name": "Sarita Yadav",
+    "gender": "Female",
+    "location": "Sector 5",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 6.1,
+    "ranking": 40
+  },
+  {
+    "id": 41,
+    "name": "Ashok Kumar",
+    "gender": "Male",
+    "location": "Chi 2",
+    "images": [
+      "assets/images/male_indian.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 14.5,
+    "ranking": 41
+  },
+  {
+    "id": 42,
+    "name": "Geeta Sharma",
+    "gender": "Female",
+    "location": "Shahdara",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 9.2,
+    "ranking": 42
+  },
+  {
+    "id": 43,
+    "name": "Naresh Kumar",
+    "gender": "Male",
+    "location": "Greater Kailash",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 22.4,
+    "ranking": 43
+  },
+  {
+    "id": 44,
+    "name": "Shilpa Singh",
+    "gender": "Female",
+    "location": "Golf Course Road",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 7.6,
+    "ranking": 44
+  },
+  {
+    "id": 45,
+    "name": "Dinesh Yadav",
+    "gender": "Male",
+    "location": "Sector 120",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 10.7,
+    "ranking": 45
+  },
+  {
+    "id": 46,
+    "name": "Komal Sharma",
+    "gender": "Female",
+    "location": "Charmwood Village",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 16.8,
+    "ranking": 46
+  },
+  {
+    "id": 47,
+    "name": "Ramesh Kumar",
+    "gender": "Male",
+    "location": "Zeta 1",
+    "images": [
+      "assets/images/male_indian.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 5.4,
+    "ranking": 47
+  },
+  {
+    "id": 48,
+    "name": "Suman Singh",
+    "gender": "Female",
+    "location": "Vijay Nagar",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 13.9,
+    "ranking": 48
+  },
+  {
+    "id": 49,
+    "name": "Yogesh Sharma",
+    "gender": "Male",
+    "location": "Saket",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 950
+    },
+    "clients": 3,
+    "distance_from_client": 8.1,
+    "ranking": 49
+  },
+  {
+    "id": 50,
+    "name": "Kirti Malhotra",
+    "gender": "Female",
+    "location": "MG Road",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 700,
+      "24_hour_shift": 900
+    },
+    "clients": 3,
+    "distance_from_client": 11.5,
+    "ranking": 50
+  },
+  {
+    "id": 51,
+    "name": "Vikas Kumar",
+    "gender": "Male",
+    "location": "Laxmi Nagar",
+    "images": [
+      "assets/images/male_indian.png",
+      "assets/images/male_india1.png",
+      "assets/images/male_white.png"
+    ],
+    "role": "Attendant",
+    "experience": 5,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 900
+    },
+    "clients": 3,
+    "distance_from_client": 8.7,
+    "ranking": 51
+  },
+  {
+    "id": 52,
+    "name": "Suman Yadav",
+    "gender": "Female",
+    "location": "Golf Links",
+    "images": [
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Attendant",
+    "experience": 4,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 890
+    },
+    "clients": 2,
+    "distance_from_client": 14.2,
+    "ranking": 52
+  },
+  {
+    "id": 53,
+    "name": "Pankaj Singh",
+    "gender": "Male",
+    "location": "Sector 45",
+    "images": [
+      "assets/images/male_indian2.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Attendant",
+    "experience": 4,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 650,
+      "24_hour_shift": 880
+    },
+    "clients": 2,
+    "distance_from_client": 19.5,
+    "ranking": 53
+  },
+  {
+    "id": 54,
+    "name": "Reena Sharma",
+    "gender": "Female",
+    "location": "Surajkund",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png"
+    ],
+    "role": "Attendant",
+    "experience": 4,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 870
+    },
+    "clients": 2,
+    "distance_from_client": 3.8,
+    "ranking": 54
+  },
+  {
+    "id": 55,
+    "name": "Mohan Kumar",
+    "gender": "Male",
+    "location": "Zeta 2",
+    "images": [
+      "assets/images/male_white2.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Attendant",
+    "experience": 4,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 860
+    },
+    "clients": 2,
+    "distance_from_client": 12.1,
+    "ranking": 55
+  },
+  {
+    "id": 56,
+    "name": "Kusum Devi",
+    "gender": "Female",
+    "location": "Karkardooma",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png"
+    ],
+    "role": "Attendant",
+    "experience": 4,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": "Not interested",
+      "24_hour_shift": 850
+    },
+    "clients": 2,
+    "distance_from_client": 17.9,
+    "ranking": 56
+  },
+  {
+    "id": 57,
+    "name": "Raju Singh",
+    "gender": "Male",
+    "location": "Ashok Vihar",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_india1.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Attendant",
+    "experience": 4,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 840
+    },
+    "clients": 2,
+    "distance_from_client": 6.4,
+    "ranking": 57
+  },
+  {
+    "id": 58,
+    "name": "Meena Kumari",
+    "gender": "Female",
+    "location": "Sikandarpur",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white2.png",
+      "assets/images/female_white3.png"
+    ],
+    "role": "Attendant",
+    "experience": 4,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 830
+    },
+    "clients": 2,
+    "distance_from_client": 2.5,
+    "ranking": 58
+  },
+  {
+    "id": 59,
+    "name": "Sanjay Kumar",
+    "gender": "Male",
+    "location": "Sector 37",
+    "images": [
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png",
+      "assets/images/male_white_blazer.png"
+    ],
+    "role": "Attendant",
+    "experience": 4,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 820
+    },
+    "clients": 2,
+    "distance_from_client": 20.3,
+    "ranking": 59
+  },
+  {
+    "id": 60,
+    "name": "Lata Devi",
+    "gender": "Female",
+    "location": "Chhattarpur",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Attendant",
+    "experience": 4,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 650,
+      "24_hour_shift": 810
+    },
+    "clients": 2,
+    "distance_from_client": 10.8,
+    "ranking": 60
+  },
+  {
+    "id": 61,
+    "name": "Naresh Kumar",
+    "gender": "Male",
+    "location": "Mu 1",
+    "images": [
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Attendant",
+    "experience": 3,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 800
+    },
+    "clients": 1,
+    "distance_from_client": 15.4,
+    "ranking": 61
+  },
+  {
+    "id": 62,
+    "name": "Savita Rani",
+    "gender": "Female",
+    "location": "Sahibabad",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Attendant",
+    "experience": 3,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 790
+    },
+    "clients": 1,
+    "distance_from_client": 7.8,
+    "ranking": 62
+  },
+  {
+    "id": 63,
+    "name": "Brijesh Yadav",
+    "gender": "Male",
+    "location": "Karol Bagh",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white_mall.png",
+      "assets/images/male_white2.png"
+    ],
+    "role": "Attendant",
+    "experience": 3,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": "Not interested",
+      "24_hour_shift": 780
+    },
+    "clients": 1,
+    "distance_from_client": 13.2,
+    "ranking": 63
+  },
+  {
+    "id": 64,
+    "name": "Pinki Devi",
+    "gender": "Female",
+    "location": "Ardee City",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Attendant",
+    "experience": 3,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 770
+    },
+    "clients": 1,
+    "distance_from_client": 22.7,
+    "ranking": 64
+  },
+  {
+    "id": 65,
+    "name": "Dilip Kumar",
+    "gender": "Male",
+    "location": "Sector 63",
+    "images": [
+      "assets/images/male_indian2.png",
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png"
+    ],
+    "role": "Attendant",
+    "experience": 3,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 760
+    },
+    "clients": 1,
+    "distance_from_client": 4.3,
+    "ranking": 65
+  },
+  {
+    "id": 66,
+    "name": "Rani Kumari",
+    "gender": "Female",
+    "location": "Neeti Bagh",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Attendant",
+    "experience": 3,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 650,
+      "24_hour_shift": 750
+    },
+    "clients": 1,
+    "distance_from_client": 18.1,
+    "ranking": 66
+  },
+  {
+    "id": 67,
+    "name": "Kailash Singh",
+    "gender": "Male",
+    "location": "Phi 3",
+    "images": [
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_indian.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Attendant",
+    "experience": 3,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 740
+    },
+    "clients": 1,
+    "distance_from_client": 9.6,
+    "ranking": 67
+  },
+  {
+    "id": 68,
+    "name": "Seema Devi",
+    "gender": "Female",
+    "location": "Dilshad Garden",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Attendant",
+    "experience": 3,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 730
+    },
+    "clients": 1,
+    "distance_from_client": 16.5,
+    "ranking": 68
+  },
+  {
+    "id": 69,
+    "name": "Pramod Kumar",
+    "gender": "Male",
+    "location": "Model Town",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Attendant",
+    "experience": 3,
+    "qualifications": "Certified Caregiver",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": "Not interested",
+      "24_hour_shift": 720
+    },
+    "clients": 1,
+    "distance_from_client": 5.1,
+    "ranking": 69
+  },
+  {
+    "id": 70,
+    "name": "Nisha Rani",
+    "gender": "Female",
+    "location": "Huda City Centre",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Attendant",
+    "experience": 3,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 21.4,
+    "ranking": 70
+  },
+  {
+    "id": 71,
+    "name": "Rakesh Yadav",
+    "gender": "Male",
+    "location": "Sector 65",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Attendant",
+    "experience": 2,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 12.7,
+    "ranking": 71
+  },
+  {
+    "id": 72,
+    "name": "Chanda Devi",
+    "gender": "Female",
+    "location": "Vivek Vihar",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Attendant",
+    "experience": 2,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 8.2,
+    "ranking": 72
+  },
+  {
+    "id": 73,
+    "name": "Suresh Kumar",
+    "gender": "Male",
+    "location": "Punjabi Bagh",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Attendant",
+    "experience": 2,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 17.1,
+    "ranking": 73
+  },
+  {
+    "id": 74,
+    "name": "Rita Kumari",
+    "gender": "Female",
+    "location": "Suncity",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Attendant",
+    "experience": 2,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 6.9,
+    "ranking": 74
+  },
+  {
+    "id": 75,
+    "name": "Manoj Kumar",
+    "gender": "Male",
+    "location": "Sector 22",
+    "images": [
+      "assets/images/male_indian.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Attendant",
+    "experience": 2,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 23.8,
+    "ranking": 75
+  },
+  {
+    "id": 76,
+    "name": "Kamla Devi",
+    "gender": "Female",
+    "location": "Anand Vihar",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Attendant",
+    "experience": 2,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": "Not interested",
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 11.3,
+    "ranking": 76
+  },
+  {
+    "id": 77,
+    "name": "Vijay Singh",
+    "gender": "Male",
+    "location": "Rani Bagh",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Attendant",
+    "experience": 2,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 5.6,
+    "ranking": 77
+  },
+  {
+    "id": 78,
+    "name": "Poonam Devi",
+    "gender": "Female",
+    "location": "South Extension",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Attendant",
+    "experience": 2,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 19.7,
+    "ranking": 78
+  },
+  {
+    "id": 79,
+    "name": "Ram Kumar",
+    "gender": "Male",
+    "location": "Sector 11",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Attendant",
+    "experience": 2,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 14.9,
+    "ranking": 79
+  },
+  {
+    "id": 80,
+    "name": "Saroj Devi",
+    "gender": "Female",
+    "location": "Badarpur",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Attendant",
+    "experience": 2,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 8.4,
+    "ranking": 80
+  },
+  {
+    "id": 81,
+    "name": "Anand Kumar",
+    "gender": "Male",
+    "location": "Eta 2",
+    "images": [
+      "assets/images/male_indian2.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Attendant",
+    "experience": 1,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 16.2,
+    "ranking": 81
+  },
+  {
+    "id": 82,
+    "name": "Usha Rani",
+    "gender": "Female",
+    "location": "Patel Nagar",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Attendant",
+    "experience": 1,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 7.3,
+    "ranking": 82
+  },
+  {
+    "id": 83,
+    "name": "Hari Singh",
+    "gender": "Male",
+    "location": "Moti Nagar",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Attendant",
+    "experience": 1,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": "Not interested",
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 20.8,
+    "ranking": 83
+  },
+  {
+    "id": 84,
+    "name": "Mamta Devi",
+    "gender": "Female",
+    "location": "Surya Vihar",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Attendant",
+    "experience": 1,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 9.1,
+    "ranking": 84
+  },
+  {
+    "id": 85,
+    "name": "Om Prakash",
+    "gender": "Male",
+    "location": "Sector 23",
+    "images": [
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Attendant",
+    "experience": 1,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 13.5,
+    "ranking": 85
+  },
+  {
+    "id": 86,
+    "name": "Kiran Devi",
+    "gender": "Female",
+    "location": "Preet Vihar",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Attendant",
+    "experience": 1,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 6.7,
+    "ranking": 86
+  },
+  {
+    "id": 87,
+    "name": "Lal Singh",
+    "gender": "Male",
+    "location": "Kirti Nagar",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Attendant",
+    "experience": 1,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 18.4,
+    "ranking": 87
+  },
+  {
+    "id": 88,
+    "name": "Savitri Devi",
+    "gender": "Female",
+    "location": "Palam Colony",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Attendant",
+    "experience": 1,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": "Not interested",
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 10.2,
+    "ranking": 88
+  },
+  {
+    "id": 89,
+    "name": "Gopal Kumar",
+    "gender": "Male",
+    "location": "Sector 49",
+    "images": [
+      "assets/images/male_indian.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Attendant",
+    "experience": 1,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 15.8,
+    "ranking": 89
+  },
+  {
+    "id": 90,
+    "name": "Anju Devi",
+    "gender": "Female",
+    "location": "Okhla",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Attendant",
+    "experience": 1,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 650,
+      "night_shift": 650,
+      "24_hour_shift": 710
+    },
+    "clients": 1,
+    "distance_from_client": 7.5,
+    "ranking": 90
+  },
+  {
+    "id": 91,
+    "name": "Shyam Singh",
+    "gender": "Male",
+    "location": "Sigma 2",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Attendant",
+    "experience": 0,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 600,
+      "night_shift": 600,
+      "24_hour_shift": 700
+    },
+    "clients": 0,
+    "distance_from_client": 19.2,
+    "ranking": 91
+  },
+  {
+    "id": 92,
+    "name": "Parvati Devi",
+    "gender": "Female",
+    "location": "Shastri Nagar",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Attendant",
+    "experience": 0,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 600,
+      "night_shift": 600,
+      "24_hour_shift": 700
+    },
+    "clients": 0,
+    "distance_from_client": 8.8,
+    "ranking": 92
+  },
+  {
+    "id": 93,
+    "name": "Madan Kumar",
+    "gender": "Male",
+    "location": "Rajouri Garden",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Attendant",
+    "experience": 0,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 600,
+      "night_shift": "Not interested",
+      "24_hour_shift": 700
+    },
+    "clients": 0,
+    "distance_from_client": 14.1,
+    "ranking": 93
+  },
+  {
+    "id": 94,
+    "name": "Guddi Devi",
+    "gender": "Female",
+    "location": "Sector 47",
+    "images": [
+      "assets/images/female_asian_office.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_traveller.png"
+    ],
+    "role": "Attendant",
+    "experience": 0,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 600,
+      "night_shift": 600,
+      "24_hour_shift": 700
+    },
+    "clients": 0,
+    "distance_from_client": 21.6,
+    "ranking": 94
+  },
+  {
+    "id": 95,
+    "name": "Babu Lal",
+    "gender": "Male",
+    "location": "Sarita Vihar",
+    "images": [
+      "assets/images/male_indian2.png",
+      "assets/images/male_white_blazer.png",
+      "assets/images/male_white_mall.png"
+    ],
+    "role": "Attendant",
+    "experience": 0,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 600,
+      "night_shift": 600,
+      "24_hour_shift": 700
+    },
+    "clients": 0,
+    "distance_from_client": 10.4,
+    "ranking": 95
+  },
+  {
+    "id": 96,
+    "name": "Shanti Devi",
+    "gender": "Female",
+    "location": "Geeta Colony",
+    "images": [
+      "assets/images/female_white.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white2.png"
+    ],
+    "role": "Attendant",
+    "experience": 0,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 600,
+      "night_shift": 600,
+      "24_hour_shift": 700
+    },
+    "clients": 0,
+    "distance_from_client": 16.9,
+    "ranking": 96
+  },
+  {
+    "id": 97,
+    "name": "Ratan Singh",
+    "gender": "Male",
+    "location": "Naraina",
+    "images": [
+      "assets/images/male_india1.png",
+      "assets/images/male_white2.png",
+      "assets/images/male_indian2.png"
+    ],
+    "role": "Attendant",
+    "experience": 0,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 600,
+      "night_shift": 600,
+      "24_hour_shift": 700
+    },
+    "clients": 0,
+    "distance_from_client": 5.2,
+    "ranking": 97
+  },
+  {
+    "id": 98,
+    "name": "Meera Devi",
+    "gender": "Female",
+    "location": "Malviya Nagar",
+    "images": [
+      "assets/images/female_asian_traveller.png",
+      "assets/images/female_white3.png",
+      "assets/images/female_asian_office.png"
+    ],
+    "role": "Attendant",
+    "experience": 0,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 600,
+      "night_shift": "Not interested",
+      "24_hour_shift": 700
+    },
+    "clients": 0,
+    "distance_from_client": 20.1,
+    "ranking": 98
+  },
+  {
+    "id": 99,
+    "name": "Jagdish Kumar",
+    "gender": "Male",
+    "location": "Sector 14",
+    "images": [
+      "assets/images/male_white.png",
+      "assets/images/male_white_student.png",
+      "assets/images/male_indian.png"
+    ],
+    "role": "Attendant",
+    "experience": 0,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 600,
+      "night_shift": 600,
+      "24_hour_shift": 700
+    },
+    "clients": 0,
+    "distance_from_client": 12.3,
+    "ranking": 99
+  },
+  {
+    "id": 100,
+    "name": "Phoolwati Devi",
+    "gender": "Female",
+    "location": "Kalkaji",
+    "images": [
+      "assets/images/female_white2.png",
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png"
+    ],
+    "role": "Attendant",
+    "experience": 0,
+    "qualifications": "Basic Care Training",
+    "rates": {
+      "day_shift": 600,
+      "night_shift": 600,
+      "24_hour_shift": 700
+    },
+    "clients": 0,
+    "distance_from_client": 9.9,
+    "ranking": 100
+  }
+]
