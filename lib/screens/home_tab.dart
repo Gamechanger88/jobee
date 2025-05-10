@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart' as material;
 import '../components/index.dart';
-import '../components/horizontal_tab.dart'; // For SeeAll component
+// For SeeAll component
 
 class HomeTab extends material.StatelessWidget {
   final material.ThemeMode themeMode;

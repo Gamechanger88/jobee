@@ -189,7 +189,7 @@ class _UserTypeSelectorState extends State<UserTypeSelector> {
                   const SizedBox(width: 12),
                   // Search Entry Field
                   Expanded(
-                    child: Container(
+                    child: SizedBox(
                       height: 48,
                       child: TextField(
                         controller: _searchController,

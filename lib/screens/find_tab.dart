@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart' as material;
-import '../constants/colors.dart';
 import '../components/index.dart';
+// Correct import
 
 class FindTab extends material.StatefulWidget {
   final material.ThemeMode themeMode;
@@ -64,7 +64,6 @@ class FindTabState extends material.State<FindTab> {
   void _onProfessionChanged(int index) {
     setState(() {
       _selectedProfessionIndex = index;
-      // Set defaults based on profession
       if (index == 0 || index == 1) {
         _selectedGender.value = 2; // Both
         _selectedShift.value = 3; // 24 hrs
@@ -106,7 +105,6 @@ class FindTabState extends material.State<FindTab> {
 
   void _onShiftChanged(int index) {
     _selectedShift.value = index;
-    // Reset distance for 24-hour shift
     if ((_selectedProfessionIndex == 0 || _selectedProfessionIndex == 1) &&
         index == 3) {
       _selectedDistance.value = 0;
@@ -145,7 +143,6 @@ class FindTabState extends material.State<FindTab> {
             bool matchesDistance = true;
             bool matchesConsultation = true;
 
-            // Nurse or Attendant: Filter by Gender and Distance
             if (_selectedProfessionIndex == 0 ||
                 _selectedProfessionIndex == 1) {
               if (_selectedGender.value == 1) {
@@ -155,7 +152,6 @@ class FindTabState extends material.State<FindTab> {
               } else if (_selectedGender.value == 2) {
                 matchesGender = true; // Both
               }
-              // Apply distance filter
               if (_selectedDistance.value == 0) {
                 matchesDistance = true; // All profiles
               } else if (_selectedDistance.value == 1) {
@@ -172,9 +168,7 @@ class FindTabState extends material.State<FindTab> {
                     profile['distance_from_client'] != null &&
                     profile['distance_from_client'] > 10;
               }
-            }
-            // Physio: Filter by Distance
-            else if (_selectedProfessionIndex == 2) {
+            } else if (_selectedProfessionIndex == 2) {
               if (_selectedDistance.value == 0) {
                 matchesDistance = true; // All profiles
               } else if (_selectedDistance.value == 1) {
@@ -200,9 +194,7 @@ class FindTabState extends material.State<FindTab> {
                     profile['rates']['beyond_10_km'] is num &&
                     profile['rates']['beyond_10_km'] != "Not interested";
               }
-            }
-            // Doctor: Filter by Consultation
-            else if (_selectedProfessionIndex == 3) {
+            } else if (_selectedProfessionIndex == 3) {
               if (_selectedConsultation.value == 1) {
                 matchesConsultation =
                     profile['rates'] != null &&
@@ -214,15 +206,17 @@ class FindTabState extends material.State<FindTab> {
                     profile['distance_from_client'] > 5 &&
                     profile['distance_from_client'] <= 10 &&
                     profile['rates'] != null &&
-                    profile['rates']['5_to_10_km'] is num &&
-                    profile['rates']['5_to_10_km'] != "Not interested";
+                    profile['rates']['home_visit_below_10_km'] is num &&
+                    profile['rates']['home_visit_below_10_km'] !=
+                        "Not interested";
               } else if (_selectedConsultation.value == 3) {
                 matchesConsultation =
                     profile['distance_from_client'] != null &&
                     profile['distance_from_client'] > 10 &&
                     profile['rates'] != null &&
-                    profile['rates']['beyond_10_km'] is num &&
-                    profile['rates']['beyond_10_km'] != "Not interested";
+                    profile['rates']['home_visit_above_10_km'] is num &&
+                    profile['rates']['home_visit_above_10_km'] !=
+                        "Not interested";
               }
             }
 
@@ -235,7 +229,6 @@ class FindTabState extends material.State<FindTab> {
             bool aAvailable = true;
             bool bAvailable = true;
 
-            // Check shift availability for Nurse/Attendant
             if (_selectedProfessionIndex == 0 ||
                 _selectedProfessionIndex == 1) {
               if (_selectedShift.value == 1) {
@@ -254,20 +247,19 @@ class FindTabState extends material.State<FindTab> {
                 bAvailable =
                     b['rates'] != null && b['rates']['24_hour_shift'] is num;
               }
-              // Sort by experience for Nurse/Attendant
               if (aAvailable && !bAvailable) return -1;
               if (!aAvailable && bAvailable) return 1;
               return (b['experience'] ?? 0).compareTo(a['experience'] ?? 0);
-            }
-            // For Physio, sort by experience
-            else if (_selectedProfessionIndex == 2) {
+            } else if (_selectedProfessionIndex == 2) {
+              if (_selectedDistance.value == 0) {
+                return (a['ranking'] ?? double.infinity).compareTo(
+                  b['ranking'] ?? double.infinity,
+                );
+              }
+              return (b['experience'] ?? 0).compareTo(a['experience'] ?? 0);
+            } else if (_selectedProfessionIndex == 3) {
               return (b['experience'] ?? 0).compareTo(a['experience'] ?? 0);
             }
-            // For Doctor, sort by experience
-            else if (_selectedProfessionIndex == 3) {
-              return (b['experience'] ?? 0).compareTo(a['experience'] ?? 0);
-            }
-            // Default: Sort by experience
             return (b['experience'] ?? 0).compareTo(a['experience'] ?? 0);
           });
 
@@ -283,7 +275,6 @@ class FindTabState extends material.State<FindTab> {
         child: material.Column(
           mainAxisAlignment: material.MainAxisAlignment.start,
           children: [
-            // First row: AppTopBar with UserTypeAppBar variant
             AppTopBar(
               variant: TopBarVariant.UserTypeAppBar,
               themeMode: widget.themeMode,
@@ -291,12 +282,10 @@ class FindTabState extends material.State<FindTab> {
                 material.Navigator.pop(context);
               },
             ),
-            // Second row: UserTypeSelector
             material.Padding(
               padding: const material.EdgeInsets.symmetric(vertical: 6),
               child: UserTypeSelector(onTabChanged: _onProfessionChanged),
             ),
-            // Third row: SecondaryFilter
             material.Padding(
               padding: const material.EdgeInsets.symmetric(vertical: 6),
               child: SecondaryFilter(
@@ -313,7 +302,6 @@ class FindTabState extends material.State<FindTab> {
                 onFilterChanged: _onFilterChanged,
               ),
             ),
-            // Fourth row: JobCards from selected profession
             material.Expanded(
               child: material.FutureBuilder<List<Map<String, dynamic>>>(
                 future: loadProfiles(),
@@ -347,7 +335,7 @@ class FindTabState extends material.State<FindTab> {
                         padding: const material.EdgeInsets.symmetric(
                           vertical: 6,
                         ),
-                        child: JobCard(
+                        child: StaffCard(
                           profile: filteredProfiles[index],
                           selectedShift: _selectedShift,
                           selectedDistance: _selectedDistance,

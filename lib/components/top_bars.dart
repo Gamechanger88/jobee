@@ -527,7 +527,7 @@ class TitleIconDarkTopBar extends material.StatelessWidget {
                   child: material.Row(
                     mainAxisAlignment: material.MainAxisAlignment.end,
                     children: [
-                      material.Container(
+                      material.SizedBox(
                         width: 28,
                         height: 28,
                         child: material.Center(
@@ -539,7 +539,7 @@ class TitleIconDarkTopBar extends material.StatelessWidget {
                         ),
                       ),
                       const material.SizedBox(width: 20),
-                      material.Container(
+                      material.SizedBox(
                         width: 28,
                         height: 28,
                         child: material.Center(
@@ -551,7 +551,7 @@ class TitleIconDarkTopBar extends material.StatelessWidget {
                         ),
                       ),
                       const material.SizedBox(width: 20),
-                      material.Container(
+                      material.SizedBox(
                         width: 28,
                         height: 28,
                         child: material.Center(

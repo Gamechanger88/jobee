@@ -16,7 +16,7 @@ export 'dropdown.dart';
 export 'app_logo.dart';
 export 'chips.dart';
 export 'alert.dart';
-export 'job_card.dart';
+export 'staff_card.dart';
 export 'progress_line.dart';
 export 'lesson_list.dart';
 export 'subjects_list.dart';

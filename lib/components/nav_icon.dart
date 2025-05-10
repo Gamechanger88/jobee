@@ -11,7 +11,7 @@ class NavIcon extends material.StatelessWidget {
 
   @override
   material.Widget build(material.BuildContext context) {
-    final assetPath = 'assets/icons/${iconName}${isActive ? '_bold' : ''}.svg';
+    final assetPath = 'assets/icons/$iconName${isActive ? '_bold' : ''}.svg';
     try {
       return material.Column(
         mainAxisSize: material.MainAxisSize.min,

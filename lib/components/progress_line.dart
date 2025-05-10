@@ -19,7 +19,7 @@ class ProgressLine extends material.StatelessWidget {
     final backgroundColor = isDarkMode ? AppColors.dark3 : AppColors.grey200;
     final textColor = isDarkMode ? AppColors.grey200 : AppColors.grey700;
 
-    return material.Container(
+    return material.SizedBox(
       width: double.infinity, // Full width
       child: material.Row(
         children: [
@@ -53,7 +53,7 @@ class ProgressLine extends material.StatelessWidget {
           // Spacing: 8px
           const material.SizedBox(width: 8),
           // Child 2: Text
-          material.Container(
+          material.SizedBox(
             width: 56,
             child: material.Text(
               text,

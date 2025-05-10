@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart' as material;
-import 'package:flutter/animation.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'screens/home_tab.dart';
-import 'screens/find_tab.dart';
-import 'screens/jobs_tab.dart';
+import 'screens/find_tab.dart' as find;
+import 'screens/jobs_tab.dart' as jobs;
 import 'screens/contacts_tab.dart';
 import 'screens/supplies_tab.dart';
 import 'constants/colors.dart';
@@ -170,7 +169,7 @@ class _JobeeHomePageState extends material.State<JobeeHomePage> {
         onGenerateRoute: (settings) {
           print('Generating route: Find');
           return material.MaterialPageRoute(
-            builder: (_) => FindTab(themeMode: _themeMode),
+            builder: (_) => find.FindTab(themeMode: _themeMode),
           );
         },
       ),
@@ -179,7 +178,7 @@ class _JobeeHomePageState extends material.State<JobeeHomePage> {
         onGenerateRoute: (settings) {
           print('Generating route: Jobs');
           return material.MaterialPageRoute(
-            builder: (_) => JobsTab(themeMode: _themeMode),
+            builder: (_) => jobs.JobsTab(themeMode: _themeMode),
           );
         },
       ),
