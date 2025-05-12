@@ -4,7 +4,7 @@ import 'screens/home_tab.dart';
 import 'screens/find_tab.dart' as find;
 import 'screens/jobs_tab.dart' as jobs;
 import 'screens/contacts_tab.dart';
-import 'screens/supplies_tab.dart';
+import 'screens/profile_tab.dart';
 import 'constants/colors.dart';
 import 'components/index.dart';
 
@@ -117,23 +117,42 @@ class _JobeeHomePageState extends material.State<JobeeHomePage> {
   final _contactsNavigatorKey = material.GlobalKey<material.NavigatorState>(
     debugLabel: 'ContactsNavigator',
   );
-  final _suppliesNavigatorKey = material.GlobalKey<material.NavigatorState>(
-    debugLabel: 'SuppliesNavigator',
+  final _profileNavigatorKey = material.GlobalKey<material.NavigatorState>(
+    debugLabel: 'ProfileNavigator',
   );
+
+  // Sample profile data for testing (e.g., Sarita Kale from ContactsTab)
+  final Map<String, dynamic> _sampleProfile = {
+    "id": "1000001",
+    "name": "Sarita Kale",
+    "saved_name": "Sarita Nurse Papa",
+    "gender": "Female",
+    "location": "Rohini",
+    "city": "Delhi",
+    "images": [
+      "assets/images/female_asian_car.png",
+      "assets/images/female_white.png",
+      "assets/images/female_asian_office.png",
+    ],
+    "role": "Staff Nurse",
+    "experience": 10,
+    "qualifications": "M.Sc. Nursing",
+    "ranking": 1,
+  };
 
   static const List<String> _tabTitles = [
     'Home',
     'Find',
     'Jobs',
     'Network',
-    'Supplies',
+    'Profile',
   ];
   static const List<String> _iconNames = [
     'home',
     'search',
     'work',
     '3 user',
-    'buy',
+    'profile_bold', // Changed from 'profile_bold' to 'profile'
   ];
 
   void _onItemTapped(int index) {
@@ -192,11 +211,11 @@ class _JobeeHomePageState extends material.State<JobeeHomePage> {
         },
       ),
       material.Navigator(
-        key: _suppliesNavigatorKey,
+        key: _profileNavigatorKey,
         onGenerateRoute: (settings) {
-          print('Generating route: Supplies');
+          print('Generating route: Profile');
           return material.MaterialPageRoute(
-            builder: (_) => SuppliesTab(themeMode: _themeMode),
+            builder: (_) => ProfileTab(profile: _sampleProfile),
           );
         },
       ),
